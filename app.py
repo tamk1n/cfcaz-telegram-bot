@@ -8,6 +8,8 @@ import os
 import settings
 from utils import convert_to_azerbaijan_time
 
+from service import *
+
 if not settings.BOT_TOKEN:
     raise ValueError("BOT_TOKEN environment variable is required")
 
@@ -63,8 +65,8 @@ async def check_group_access(update: Update, context: ContextTypes.DEFAULT_TYPE)
     chat_type = update.effective_chat.type
     
     # If no specific groups are configured, allow all groups
-    # if not ALLOWED_GROUPS:
-    #     return True
+    if not ALLOWED_GROUPS:
+        return True
     
     # Check if it's an allowed group/channel
     if chat_id in ALLOWED_GROUPS:
@@ -118,7 +120,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text(welcome_msg, reply_markup=reply_markup, parse_mode='Markdown')
     return START_ROUTES
 
-
 async def fixtures(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Request Chelsea API and show beautiful fixture list with pagination."""
     # Group access check temporarily disabled since ALLOWED_GROUPS is empty
@@ -132,89 +133,100 @@ async def fixtures(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     page = 1
     if '_page_' in query.data:
         page = int(query.data.split('_page_')[1])
-    
-    async with aiohttp.ClientSession() as session:
-        async with session.get(settings.CHELSEA_API_URL) as resp:
-            if resp.status == 200:
-                data = await resp.json()
-                try:
-                    # Get all matches
-                    all_matches = []
-                    for item in data['items']:
-                        for match in item['items']:
-                            all_matches.append(match)
-                    
-                    # Pagination settings
-                    matches_per_page = 3
-                    total_matches = len(all_matches)
-                    total_pages = (total_matches + matches_per_page - 1) // matches_per_page
-                    
-                    # Get matches for current page
-                    start_idx = (page - 1) * matches_per_page
-                    end_idx = start_idx + matches_per_page
-                    page_matches = all_matches[start_idx:end_idx]
-                    
-                    msg = "🔵 **CHELSEA FC** 🔵\n"
-                    msg += "═" * 25 + "\n"
-                    msg += f"📅 **Qarşıdakı Oyunlar** (Səhifə {page}/{total_pages})\n\n"
-                    
-                    for i, match in enumerate(page_matches, start_idx + 1):
-                        m = match['matchUp']
-                        home = m['home']['clubShortName']
-                        away = m['away']['clubShortName']
-                        date = match['kickoffDate']
-                        time = match['kickoffTime']
-                        venue = match['venue']
-                        comp = match['competition']
-                        
-                        # Convert to Azerbaijan timezone (+4)
-                        az_date, az_time = convert_to_azerbaijan_time(date, time)
-                        
-                        # Add match status indicators
-                        status_icon = "🟢" if not match.get('tbc', False) else "🟡"
-                        home_icon = "🏠" if m['isHomeFixture'] else "✈️"
-                        
-                        msg += f"{status_icon} **Oyun {i}**\n"
-                        msg += f"⚽ {home} vs {away}\n"
-                        msg += f"{home_icon} {venue}\n"
-                        msg += f"🏆 {comp}\n"
-                        msg += f"📅 {az_date} - ⏰ {az_time}\n"
-                        msg += "─" * 20 + "\n\n"
-                    
-                    # Create pagination buttons
-                    keyboard = []
-                    
-                    # Navigation row
-                    nav_row = []
-                    if page > 1:
-                        nav_row.append(InlineKeyboardButton("⬅️ Əvvəlki", callback_data=f"Təqvim_page_{page-1}"))
-                    if page < total_pages:
-                        nav_row.append(InlineKeyboardButton("Növbəti ➡️", callback_data=f"Təqvim_page_{page+1}"))
-                    if nav_row:
-                        keyboard.append(nav_row)
-                    
-                    # Action buttons
-                    keyboard.extend([
-                        [
-                            InlineKeyboardButton("◀️ Geri", callback_data="back_main"),
-                            InlineKeyboardButton("🔄 Yenilə", callback_data="Təqvim")
-                        ]
-                    ])
-                    reply_markup = InlineKeyboardMarkup(keyboard)
-                    
-                except Exception as e:
-                    logger.error("Error parsing match data", exc_info=True)
-                    msg = f"❌ Oyun məlumatları tapılmadı. Xəta: {str(e)}"
-                    keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="Təqvim")]]
-                    reply_markup = InlineKeyboardMarkup(keyboard)
-            else:
-                msg = f"❌ Chelsea API xətası: {resp.status}"
-                keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="Təqvim")]]
-                reply_markup = InlineKeyboardMarkup(keyboard)
+
+    # Fetch data with intelligent caching
+    result = await fetch_with_cache(url=settings.CHELSEA_API_URL, cache_key="fixtures", max_age_hours=settings.FIXTURES_CACHE_HOURS)
+
+    if result["success"]:
+        try:
+            data = result["data"]
+
+            # Get all matches
+            all_matches = []
+            for item in data['items']:
+                for match in item['items']:
+                    all_matches.append(match)
+            
+            # Pagination settings
+            matches_per_page = 3
+            total_matches = len(all_matches)
+            total_pages = (total_matches + matches_per_page - 1) // matches_per_page
+            
+            # Get matches for current page
+            start_idx = (page - 1) * matches_per_page
+            end_idx = start_idx + matches_per_page
+            page_matches = all_matches[start_idx:end_idx]
+            
+            msg = "🔵 **CHELSEA FC** 🔵\n"
+            msg += "═" * 25 + "\n"
+            msg += f"📅 **Qarşıdakı Oyunlar** (Səhifə {page}/{total_pages})\n\n"
+            
+            for i, match in enumerate(page_matches, start_idx + 1):
+                m = match['matchUp']
+                home = m['home']['clubShortName']
+                away = m['away']['clubShortName']
+                date = match['kickoffDate']
+                time = match['kickoffTime']
+                venue = match['venue']
+                comp = match['competition']
+                
+                # Convert to Azerbaijan timezone (+4)
+                az_date, az_time = convert_to_azerbaijan_time(date, time)
+                
+                # Add match status indicators
+                status_icon = "🟢" if not match.get('tbc', False) else "🟡"
+                home_icon = "🏠" if m['isHomeFixture'] else "✈️"
+                
+                msg += f"{status_icon} **Oyun {i}**\n"
+                msg += f"⚽ {home} vs {away}\n"
+                msg += f"{home_icon} {venue}\n"
+                msg += f"🏆 {comp}\n"
+                msg += f"📅 {az_date} - ⏰ {az_time}\n"
+                msg += "─" * 20 + "\n\n"
+            
+            # Create pagination buttons
+            keyboard = []
+            
+            # Navigation row
+            nav_row = []
+            if page > 1:
+                nav_row.append(InlineKeyboardButton("⬅️ Əvvəlki", callback_data=f"Təqvim_page_{page-1}"))
+            if page < total_pages:
+                nav_row.append(InlineKeyboardButton("Növbəti ➡️", callback_data=f"Təqvim_page_{page+1}"))
+            if nav_row:
+                keyboard.append(nav_row)
+            
+            # Action buttons
+            keyboard.extend([
+                [
+                    InlineKeyboardButton("◀️ Geri", callback_data="back_main"),
+                    InlineKeyboardButton("🔄 Yenilə", callback_data="Təqvim")
+                ]
+            ])
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            
+        except Exception as e:
+            logger.error("Error parsing match data", exc_info=True)
+            msg = f"❌ Oyun məlumatları emal edilə bilmədi."
+            if result["source"] == "cache":
+                msg += " Keş məlumatları işlənmədi."
+            keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="Təqvim")]]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+    else:
+        # Both API and cache failed
+        msg = "❌ **Oyun Təqvimi Əlçatan Deyil**\n\n"
+        msg += "⚠️ Hal-hazırda oyun məlumatlarına çatmaq mümkün deyil.\n\n"
+        msg += "💡 **Səbəblər:**\n"
+        msg += "• Chelsea FC saytında texniki problemlər\n"
+        msg += "• Internet əlaqə problemi\n"
+        msg += "• Server yüklənməsi\n\n"
+        msg += "🔄 Xahiş edirik, bir neçə dəqiqə sonra yenidən cəhd edin."
+        
+        keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="Təqvim")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
     
     await query.edit_message_text(text=msg, reply_markup=reply_markup, parse_mode='Markdown')
     return START_ROUTES
-
 
 async def back_to_main(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Go back to main menu"""
@@ -258,12 +270,14 @@ async def league_table(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     
     query = update.callback_query
     await query.answer()
-    
-    async with aiohttp.ClientSession() as session:
-        async with session.get(settings.LEAGUE_TABLE_API_URL) as resp:
-            if resp.status == 200:
-                data = await resp.json()
-                try:
+
+    try:
+        # Fetch data directly from API without caching
+        async with aiohttp.ClientSession() as session:
+            async with session.get(settings.LEAGUE_TABLE_API_URL) as response:
+                if response.status == 200:
+                    data = await response.json()
+                    
                     # Get the Premier League table
                     items = data.get('items', [])
                     if not items:
@@ -319,15 +333,22 @@ async def league_table(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
                     ]
                     reply_markup = InlineKeyboardMarkup(keyboard)
                     
-                except Exception as e:
-                    logger.error("Error parsing table data", exc_info=True)
-                    msg = f"❌ Cədvəl məlumatları tapılmadı. Xəta: {str(e)}"
-                    keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="table")]]
-                    reply_markup = InlineKeyboardMarkup(keyboard)
-            else:
-                msg = f"❌ Chelsea API xətası: {resp.status}"
-                keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="table")]]
-                reply_markup = InlineKeyboardMarkup(keyboard)
+                else:
+                    # API request failed
+                    raise Exception(f"API request failed with status {response.status}")
+                    
+    except Exception as e:
+        logger.error("Error fetching table data", exc_info=True)
+        msg = "❌ **Turnir Cədvəli Əlçatan Deyil**\n\n"
+        msg += "⚠️ Hal-hazırda turnir cədvəli məlumatlarına çatmaq mümkün deyil.\n\n"
+        msg += "💡 **Səbəblər:**\n"
+        msg += "• Chelsea FC saytında texniki problemlər\n"
+        msg += "• Internet əlaqə problemi\n"
+        msg += "• Server yüklənməsi\n\n"
+        msg += "🔄 Xahiş edirik, bir neçə dəqiqə sonra yenidən cəhd edin."
+        
+        keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="table")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
     
     await query.edit_message_text(text=msg, reply_markup=reply_markup, parse_mode='HTML')
     return START_ROUTES
@@ -347,111 +368,122 @@ async def recent_results(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     if '_page_' in query.data:
         page = int(query.data.split('_page_')[1])
     
-    async with aiohttp.ClientSession() as session:
-        async with session.get(settings.RESULTS_API_URL) as resp:
-            if resp.status == 200:
-                data = await resp.json()
-                try:
-                    # Get all matches from all months
-                    all_matches = []
-                    
-                    # First, add the latest match if it exists
-                    if 'latestResult' in data and 'fixture' in data['latestResult']:
-                        latest_match = data['latestResult']['fixture']
-                        all_matches.append(latest_match)
-                    
-                    # Then add matches from items (but skip duplicates)
-                    for month_group in data['items']:
-                        for match in month_group['items']:
-                            # Check if this match is already in the list (avoid duplicating latest match)
-                            if not any(existing_match['id'] == match['id'] for existing_match in all_matches):
-                                all_matches.append(match)
-                    
-                    # Pagination settings
-                    matches_per_page = 5
-                    total_matches = len(all_matches)
-                    total_pages = (total_matches + matches_per_page - 1) // matches_per_page
-                    
-                    # Get matches for current page
-                    start_idx = (page - 1) * matches_per_page
-                    end_idx = start_idx + matches_per_page
-                    page_matches = all_matches[start_idx:end_idx]
-                    
-                    msg = "⚽ <b>SON NƏTİCƏLƏR</b> ⚽\n"
-                    msg += "═" * 25 + "\n\n"
-                    msg += f"📋 Səhifə {page}/{total_pages}\n\n"
-                    
-                    for i, match in enumerate(page_matches, start_idx + 1):
-                        m = match['matchUp']
-                        home = m['home']['clubShortName']
-                        away = m['away']['clubShortName']
-                        home_score = m['home']['score']
-                        away_score = m['away']['score']
-                        date = match['kickoffDate']
-                        time = match['kickoffTime']
-                        venue = match['venue']
-                        comp = match['competition']
-                        
-                        # Convert to Azerbaijan timezone (+4)
-                        az_date, az_time = convert_to_azerbaijan_time(date, time)
-                        
-                        # Determine result icon
-                        if m['isHomeFixture']:
-                            # Chelsea home
-                            if home_score > away_score:
-                                result_icon = "🟢"  # Win
-                            elif home_score == away_score:
-                                result_icon = "🟡"  # Draw
-                            else:
-                                result_icon = "🔴"  # Loss
-                        else:
-                            # Chelsea away
-                            if away_score > home_score:
-                                result_icon = "🟢"  # Win
-                            elif away_score == home_score:
-                                result_icon = "🟡"  # Draw
-                            else:
-                                result_icon = "🔴"  # Loss
-                        
-                        home_icon = "🏠" if m['isHomeFixture'] else "✈️"
-                        
-                        msg += f"{result_icon} <b>Oyun {i}</b>\n"
-                        msg += f"⚽ {home} {home_score} - {away_score} {away}\n"
-                        msg += f"{home_icon} {venue}\n"
-                        msg += f"🏆 {comp}\n"
-                        msg += f"📅 {az_date} - ⏰ {az_time}\n"
-                        msg += "─" * 20 + "\n\n"
-                    
-                    # Create pagination buttons
-                    keyboard = []
-                    
-                    # Navigation row
-                    nav_row = []
-                    if page > 1:
-                        nav_row.append(InlineKeyboardButton("⬅️ Əvvəlki", callback_data=f"results_page_{page-1}"))
-                    if page < total_pages:
-                        nav_row.append(InlineKeyboardButton("Növbəti ➡️", callback_data=f"results_page_{page+1}"))
-                    if nav_row:
-                        keyboard.append(nav_row)
-                    
-                    # Action buttons
-                    keyboard.extend([
-                        [
-                            InlineKeyboardButton("◀️ Geri", callback_data="back_main"),
-                            InlineKeyboardButton("🔄 Yenilə", callback_data="results")
-                        ]
-                    ])
-                    reply_markup = InlineKeyboardMarkup(keyboard)
-                    
-                except Exception as e:
-                    logger.error("Error parsing results data", exc_info=True)
-                    msg = f"❌ Nəticə məlumatları tapılmadı. Xəta: {str(e)}"
-                    keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="results")]]
-                    reply_markup = InlineKeyboardMarkup(keyboard)
-            else:
-                msg = f"❌ Chelsea API xətası: {resp.status}"
-                keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="results")]]
-                reply_markup = InlineKeyboardMarkup(keyboard)
+    # Fetch data with intelligent caching
+    result = await fetch_with_cache(url=settings.RESULTS_API_URL, cache_key="recent_results", max_age_hours=settings.RESULTS_CACHE_HOURS)
+
+    if result["success"]:
+        try:
+            data = result["data"]
+
+            # Get all matches from all months
+            all_matches = []
+            
+            # First, add the latest match if it exists
+            if 'latestResult' in data and 'fixture' in data['latestResult']:
+                latest_match = data['latestResult']['fixture']
+                all_matches.append(latest_match)
+            
+            # Then add matches from items (but skip duplicates)
+            for month_group in data['items']:
+                for match in month_group['items']:
+                    # Check if this match is already in the list (avoid duplicating latest match)
+                    if not any(existing_match['id'] == match['id'] for existing_match in all_matches):
+                        all_matches.append(match)
+            
+            # Pagination settings
+            matches_per_page = 5
+            total_matches = len(all_matches)
+            total_pages = (total_matches + matches_per_page - 1) // matches_per_page
+            
+            # Get matches for current page
+            start_idx = (page - 1) * matches_per_page
+            end_idx = start_idx + matches_per_page
+            page_matches = all_matches[start_idx:end_idx]
+            
+            msg = "⚽ <b>SON NƏTİCƏLƏR</b> ⚽\n"
+            msg += "═" * 25 + "\n\n"
+            msg += f"📋 Səhifə {page}/{total_pages}\n\n"
+            
+            for i, match in enumerate(page_matches, start_idx + 1):
+                m = match['matchUp']
+                home = m['home']['clubShortName']
+                away = m['away']['clubShortName']
+                home_score = m['home']['score']
+                away_score = m['away']['score']
+                date = match['kickoffDate']
+                time = match['kickoffTime']
+                venue = match['venue']
+                comp = match['competition']
+                
+                # Convert to Azerbaijan timezone (+4)
+                az_date, az_time = convert_to_azerbaijan_time(date, time)
+                
+                # Determine result icon
+                if m['isHomeFixture']:
+                    # Chelsea home
+                    if home_score > away_score:
+                        result_icon = "🟢"  # Win
+                    elif home_score == away_score:
+                        result_icon = "🟡"  # Draw
+                    else:
+                        result_icon = "🔴"  # Loss
+                else:
+                    # Chelsea away
+                    if away_score > home_score:
+                        result_icon = "🟢"  # Win
+                    elif away_score == home_score:
+                        result_icon = "🟡"  # Draw
+                    else:
+                        result_icon = "🔴"  # Loss
+                
+                home_icon = "🏠" if m['isHomeFixture'] else "✈️"
+                
+                msg += f"{result_icon} <b>Oyun {i}</b>\n"
+                msg += f"⚽ {home} {home_score} - {away_score} {away}\n"
+                msg += f"{home_icon} {venue}\n"
+                msg += f"🏆 {comp}\n"
+                msg += f"📅 {az_date} - ⏰ {az_time}\n"
+                msg += "─" * 20 + "\n\n"
+            
+            # Create pagination buttons
+            keyboard = []
+            
+            # Navigation row
+            nav_row = []
+            if page > 1:
+                nav_row.append(InlineKeyboardButton("⬅️ Əvvəlki", callback_data=f"results_page_{page-1}"))
+            if page < total_pages:
+                nav_row.append(InlineKeyboardButton("Növbəti ➡️", callback_data=f"results_page_{page+1}"))
+            if nav_row:
+                keyboard.append(nav_row)
+            
+            # Action buttons
+            keyboard.extend([
+                [
+                    InlineKeyboardButton("◀️ Geri", callback_data="back_main"),
+                    InlineKeyboardButton("🔄 Yenilə", callback_data="results")
+                ]
+            ])
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            
+        except Exception as e:
+            logger.error("Error parsing results data", exc_info=True)
+            msg = f"❌ Nəticə məlumatları tapılmadı. Xəta: {str(e)}"
+            keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="results")]]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+    else:
+        # Both API and cache failed
+        msg = "❌ **Oyunların nəticəsi hazırda əlçatan Deyil**\n\n"
+        msg += "⚠️ Hal-hazırda oyunların nəticəsi məlumatlarına çatmaq mümkün deyil.\n\n"
+        msg += "🔄 Xahiş edirik, bir neçə dəqiqə sonra yenidən cəhd edin."
+        msg += "💡 **Səbəblər:**\n"
+        msg += "• Chelsea FC saytında texniki problemlər\n"
+        msg += "• Internet əlaqə problemi\n"
+        msg += "• Server yüklənməsi\n\n"
+        msg += "🔄 Xahiş edirik, bir neçə dəqiqə sonra yenidən cəhd edin."
+
+        keyboard = [[InlineKeyboardButton("🔄 Yenidən Cəhd Et", callback_data="results")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
     
     await query.edit_message_text(text=msg, reply_markup=reply_markup, parse_mode='HTML')
     return START_ROUTES
@@ -592,159 +624,160 @@ async def player_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int
         # Fetch player stats from API
         stats_url = f"{settings.PLAYER_STATS_API_URL}{player_id}/stats"
         
-        async with aiohttp.ClientSession() as session:
-            async with session.get(stats_url) as response:
-                if response.status == 200:
-                    stats_data = await response.json()
-                    
-                    # Extract player photo URL from response
-                    photo_url = None
-                    
-                    # Try to get photo from different sections in the API response
-                    for section in ['goalKeeping', 'goals', 'passSuccess']:
-                        if (section in stats_data and 
-                            'playerAvatar' in stats_data[section] and
-                            'image' in stats_data[section]['playerAvatar'] and
-                            'file' in stats_data[section]['playerAvatar']['image'] and
-                            'url' in stats_data[section]['playerAvatar']['image']['file']):
-                            photo_url = stats_data[section]['playerAvatar']['image']['file']['url']
-                            break
-                    
-                    # Build message with statistics
-                    msg = f"👤 <b>{display_name}</b>\n\n"
-                    
-                    # Appearances section
-                    if 'appearances' in stats_data and 'stats' in stats_data['appearances']:
-                        msg += "📊 <b>Oyunlar</b>\n"
-                        appearances = stats_data['appearances']['stats']
-                        for stat in appearances:
-                            title = stat.get('title', '')
-                            value = stat.get('value', '0')
-                            if 'Appearances' in title:
-                                msg += f"• Oyun sayı: {value} oyun\n"
-                            elif 'Minutes' in title:
-                                msg += f"• Oynadığı dəqiqə: {value} dəqiqə\n"
-                            elif 'Starts' in title:
-                                msg += f"• İlk 11: {value} oyun\n"
-                        msg += "\n"
-                    
-                    # Goals section (if player has goals)
-                    if 'goals' in stats_data and 'stats' in stats_data['goals']:
-                        msg += "⚽ <b>Qollar</b>\n"
-                        goals = stats_data['goals']['stats']
-                        for stat in goals:
-                            title = stat.get('title', '')
-                            value = stat.get('value', '0')
-                            if 'Total Goals' in title:
-                                msg += f"• Ümumi qol sayı: {value}\n"
-                            elif 'Goals Per Match' in title:
-                                msg += f"• Hər oyuna qol nisbət: {value}\n"
-                        msg += "\n"
-                    
-                    # Scored With section (how goals were scored)
-                    if 'scoredWith' in stats_data:
-                        scored_with = stats_data['scoredWith']
-                        has_goals = any(
-                            scored_with.get(key, {}).get('value', '0') != '0' 
-                            for key in ['head', 'leftFoot', 'rightFoot', 'penalties', 'freeKicks']
-                        )
-                        if has_goals:
-                            msg += "🎯 <b>Qol vurub:</b>\n"
-                            if scored_with.get('head', {}).get('value', '0') != '0':
-                                msg += f"• Başla: {scored_with['head']['value']}\n"
-                            if scored_with.get('leftFoot', {}).get('value', '0') != '0':
-                                msg += f"• Sol ayaqla: {scored_with['leftFoot']['value']}\n"
-                            if scored_with.get('rightFoot', {}).get('value', '0') != '0':
-                                msg += f"• Sağ ayaqla: {scored_with['rightFoot']['value']}\n"
-                            if scored_with.get('penalties', {}).get('value', '0') != '0':
-                                msg += f"• Penaltı: {scored_with['penalties']['value']}\n"
-                            if scored_with.get('freeKicks', {}).get('value', '0') != '0':
-                                msg += f"• Cərimə zərbəsi: {scored_with['freeKicks']['value']}\n"
-                            msg += "\n"
-                    
-                    # Goalkeeping section (if goalkeeper)
-                    if 'goalKeeping' in stats_data and 'stats' in stats_data['goalKeeping']:
-                        msg += "🥅 <b>Qapıçı Statistikası</b>\n"
-                        gk_stats = stats_data['goalKeeping']['stats']
-                        for stat in gk_stats:
-                            title = stat.get('title', '')
-                            value = stat.get('value', '0')
-                            if 'Total Saves' in title:
-                                msg += f"• Xilasetmələr: {value}\n"
-                            elif 'Clean Sheets' in title:
-                                msg += f"• Qapısında qol görmədiyi oyunlar: {value}\n"
-                        msg += "\n"
-                    
-                    # Pass Success section
-                    if 'passSuccess' in stats_data and 'stats' in stats_data['passSuccess']:
-                        msg += "🎯 <b>Ötürmə sayı</b>\n"
-                        pass_stats = stats_data['passSuccess']['stats']
-                        for stat in pass_stats:
-                            title = stat.get('title', '')
-                            value = stat.get('value', '0')
-                            if 'Total Passes' in title:
-                                msg += f"• Ümumi ötürmə sayı: {value}\n"
-                            elif 'Key Passes' in title:
-                                msg += f"• Açar ötürmə sayı: {value}\n"
-                            elif 'Assists' in title:
-                                msg += f"• Asist sayı: {value}\n"
+        result = await fetch_with_cache(
+            url=stats_url, 
+            cache_key=f"player_stats_{player_id}", 
+            max_age_hours=settings.PLAYER_STATS_CACHE_HOURS
+        )
+        photo_url = None
 
-                        # Pass success rate
-                        if 'playerRankingPercent' in stats_data['passSuccess']:
-                            success_rate = stats_data['passSuccess']['playerRankingPercent']
-                            msg += f"• Dəqiqlik: {success_rate}%\n"
-                        msg += "\n"
-                    
-                    # Fouls section
-                    if 'fouls' in stats_data:
-                        fouls = stats_data['fouls']
-                        if any(fouls.values()):
-                            msg += "🟨 <b>Qayda pozuntuları</b>\n"
-                            if 'yellowCards' in fouls and fouls['yellowCards'].get('value', '0') != '0':
-                                msg += f"• Sarı kart sayı: {fouls['yellowCards']['value']}\n"
-                            if 'redCards' in fouls and fouls['redCards'].get('value', '0') != '0':
-                                msg += f"• Qırmızı kart sayı: {fouls['redCards']['value']}\n"
-                            if 'foulsDrawn' in fouls and fouls['foulsDrawn'].get('value', '0') != '0':
-                                msg += f"• Məruz qaldığı pozuntular: {fouls['foulsDrawn']['value']}\n"
-                            msg += "\n"
-                    
-                    # Shots section
-                    if 'shots' in stats_data:
-                        shots = stats_data['shots']
-                        if (shots.get('playerShotsOnTarget', '0') != '0' or 
-                            shots.get('playerShotsOffTarget', '0') != '0'):
-                            msg += "🎯 <b>Zərbələr</b>\n"
-                            if shots.get('playerShotsOnTarget', '0') != '0':
-                                msg += f"• Dəqiq zərbə sayı: {shots['playerShotsOnTarget']}\n"
-                            if shots.get('playerShotsOffTarget', '0') != '0':
-                                msg += f"• Dəqiq olmayan zərbə sayı: {shots['playerShotsOffTarget']}\n"
-                            msg += "\n"
-                    
-                    # Touches section
-                    if 'touches' in stats_data and 'stats' in stats_data['touches']:
-                        msg += "⚽ <b>Oyun Fəaliyyəti</b>\n"
-                        touches = stats_data['touches']['stats']
-                        for stat in touches:
-                            title = stat.get('title', '')
-                            value = stat.get('value', '0')
-                            if 'Total Touches' in title:
-                                msg += f"• Topa toxunmalar: {value}\n"
-                            elif 'Tackles Won' in title and '/' in value:
-                                won, lost = value.split('/')
-                                if won != '0':
-                                    msg += f"• Qazanılan əks hücumlar: {won}\n"
-                            elif 'Clearances' in title and value != '0':
-                                msg += f"• Müdafiə sayı: {value}\n"
-                        msg += "\n"
-                        msg += "🔍 <b>Bu statistika 2024/2025 Premyer Liqası üçün nəzərdə tutulub</b>\n\n"
+        if result["success"]:
+            stats_data = result["data"]         
+            # Try to get photo from different sections in the API response
+            for section in ['goalKeeping', 'goals', 'passSuccess']:
+                if (section in stats_data and 
+                    'playerAvatar' in stats_data[section] and
+                    'image' in stats_data[section]['playerAvatar'] and
+                    'file' in stats_data[section]['playerAvatar']['image'] and
+                    'url' in stats_data[section]['playerAvatar']['image']['file']):
+                    photo_url = stats_data[section]['playerAvatar']['image']['file']['url']
+                    break
+            
+            # Build message with statistics
+            msg = f"👤 <b>{display_name}</b>\n\n"
+            
+            # Appearances section
+            if 'appearances' in stats_data and 'stats' in stats_data['appearances']:
+                msg += "📊 <b>Oyunlar</b>\n"
+                appearances = stats_data['appearances']['stats']
+                for stat in appearances:
+                    title = stat.get('title', '')
+                    value = stat.get('value', '0')
+                    if 'Appearances' in title:
+                        msg += f"• Oyun sayı: {value} oyun\n"
+                    elif 'Minutes' in title:
+                        msg += f"• Oynadığı dəqiqə: {value} dəqiqə\n"
+                    elif 'Starts' in title:
+                        msg += f"• İlk 11: {value} oyun\n"
+                msg += "\n"
+            
+            # Goals section (if player has goals)
+            if 'goals' in stats_data and 'stats' in stats_data['goals']:
+                msg += "⚽ <b>Qollar</b>\n"
+                goals = stats_data['goals']['stats']
+                for stat in goals:
+                    title = stat.get('title', '')
+                    value = stat.get('value', '0')
+                    if 'Total Goals' in title:
+                        msg += f"• Ümumi qol sayı: {value}\n"
+                    elif 'Goals Per Match' in title:
+                        msg += f"• Hər oyuna qol nisbət: {value}\n"
+                msg += "\n"
+            
+            # Scored With section (how goals were scored)
+            if 'scoredWith' in stats_data:
+                scored_with = stats_data['scoredWith']
+                has_goals = any(
+                    scored_with.get(key, {}).get('value', '0') != '0' 
+                    for key in ['head', 'leftFoot', 'rightFoot', 'penalties', 'freeKicks']
+                )
+                if has_goals:
+                    msg += "🎯 <b>Qol vurub:</b>\n"
+                    if scored_with.get('head', {}).get('value', '0') != '0':
+                        msg += f"• Başla: {scored_with['head']['value']}\n"
+                    if scored_with.get('leftFoot', {}).get('value', '0') != '0':
+                        msg += f"• Sol ayaqla: {scored_with['leftFoot']['value']}\n"
+                    if scored_with.get('rightFoot', {}).get('value', '0') != '0':
+                        msg += f"• Sağ ayaqla: {scored_with['rightFoot']['value']}\n"
+                    if scored_with.get('penalties', {}).get('value', '0') != '0':
+                        msg += f"• Penaltı: {scored_with['penalties']['value']}\n"
+                    if scored_with.get('freeKicks', {}).get('value', '0') != '0':
+                        msg += f"• Cərimə zərbəsi: {scored_with['freeKicks']['value']}\n"
+                    msg += "\n"
+            
+            # Goalkeeping section (if goalkeeper)
+            if 'goalKeeping' in stats_data and 'stats' in stats_data['goalKeeping']:
+                msg += "🥅 <b>Qapıçı Statistikası</b>\n"
+                gk_stats = stats_data['goalKeeping']['stats']
+                for stat in gk_stats:
+                    title = stat.get('title', '')
+                    value = stat.get('value', '0')
+                    if 'Total Saves' in title:
+                        msg += f"• Xilasetmələr: {value}\n"
+                    elif 'Clean Sheets' in title:
+                        msg += f"• Qapısında qol görmədiyi oyunlar: {value}\n"
+                msg += "\n"
+            
+            # Pass Success section
+            if 'passSuccess' in stats_data and 'stats' in stats_data['passSuccess']:
+                msg += "🎯 <b>Ötürmə sayı</b>\n"
+                pass_stats = stats_data['passSuccess']['stats']
+                for stat in pass_stats:
+                    title = stat.get('title', '')
+                    value = stat.get('value', '0')
+                    if 'Total Passes' in title:
+                        msg += f"• Ümumi ötürmə sayı: {value}\n"
+                    elif 'Key Passes' in title:
+                        msg += f"• Açar ötürmə sayı: {value}\n"
+                    elif 'Assists' in title:
+                        msg += f"• Asist sayı: {value}\n"
 
-                    # If no significant stats found, show basic info
-                    if not any(section in stats_data for section in ['appearances', 'goals', 'goalKeeping', 'passSuccess']):
-                        msg += "📊 Bu oyunçu üçün ətraflı statistika hələ mövcud deyil.\n\n"
-                    
-                else:
-                    msg = f"👤 <b>{display_name}</b>\n\n"
-                    msg += "❌ Statistika məlumatları yüklənə bilmədi.\n\n"
+                # Pass success rate
+                if 'playerRankingPercent' in stats_data['passSuccess']:
+                    success_rate = stats_data['passSuccess']['playerRankingPercent']
+                    msg += f"• Dəqiqlik: {success_rate}%\n"
+                msg += "\n"
+            
+            # Fouls section
+            if 'fouls' in stats_data:
+                fouls = stats_data['fouls']
+                if any(fouls.values()):
+                    msg += "🟨 <b>Qayda pozuntuları</b>\n"
+                    if 'yellowCards' in fouls and fouls['yellowCards'].get('value', '0') != '0':
+                        msg += f"• Sarı kart sayı: {fouls['yellowCards']['value']}\n"
+                    if 'redCards' in fouls and fouls['redCards'].get('value', '0') != '0':
+                        msg += f"• Qırmızı kart sayı: {fouls['redCards']['value']}\n"
+                    if 'foulsDrawn' in fouls and fouls['foulsDrawn'].get('value', '0') != '0':
+                        msg += f"• Məruz qaldığı pozuntular: {fouls['foulsDrawn']['value']}\n"
+                    msg += "\n"
+            
+            # Shots section
+            if 'shots' in stats_data:
+                shots = stats_data['shots']
+                if (shots.get('playerShotsOnTarget', '0') != '0' or 
+                    shots.get('playerShotsOffTarget', '0') != '0'):
+                    msg += "🎯 <b>Zərbələr</b>\n"
+                    if shots.get('playerShotsOnTarget', '0') != '0':
+                        msg += f"• Dəqiq zərbə sayı: {shots['playerShotsOnTarget']}\n"
+                    if shots.get('playerShotsOffTarget', '0') != '0':
+                        msg += f"• Dəqiq olmayan zərbə sayı: {shots['playerShotsOffTarget']}\n"
+                    msg += "\n"
+            
+            # Touches section
+            if 'touches' in stats_data and 'stats' in stats_data['touches']:
+                msg += "⚽ <b>Oyun Fəaliyyəti</b>\n"
+                touches = stats_data['touches']['stats']
+                for stat in touches:
+                    title = stat.get('title', '')
+                    value = stat.get('value', '0')
+                    if 'Total Touches' in title:
+                        msg += f"• Topa toxunmalar: {value}\n"
+                    elif 'Tackles Won' in title and '/' in value:
+                        won, lost = value.split('/')
+                        if won != '0':
+                            msg += f"• Qazanılan əks hücumlar: {won}\n"
+                    elif 'Clearances' in title and value != '0':
+                        msg += f"• Müdafiə sayı: {value}\n"
+                msg += "\n"
+                msg += "🔍 <b>Bu statistika 2024/2025 Premyer Liqası üçün nəzərdə tutulub</b>\n\n"
+
+            # If no significant stats found, show basic info
+            if not any(section in stats_data for section in ['appearances', 'goals', 'goalKeeping', 'passSuccess']):
+                msg += "📊 Bu oyunçu üçün ətraflı statistika hələ mövcud deyil.\n\n"
+            
+        else:
+            msg = f"👤 <b>{display_name}</b>\n\n"
+            msg += "❌ Statistika məlumatları yüklənə bilmədi.\n\n"
                     
     except Exception as e:
         msg = f"� <b>{display_name}</b>\n\n"
