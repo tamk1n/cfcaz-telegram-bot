@@ -67,6 +67,9 @@ PLAYERS = [
             {"id": "qbrH5sUyPH8swXEC2twTp", "full_name": "Christopher Nkunku", "number": 18},
             {"id": "2FwzGE2WMOHAnR0puVMisc", "full_name": "Joao Pedro", "number": 20},
             {"id": "5Y1CrHFGRhBLOjHMUNmkk5", "full_name": "Tyrique George", "number": 32},
-            {"id": "7pQf4EbJjYGXqcniuC0I0t", "full_name": "Estevao", "number": 41},
+            {"id": "7pQf4EbJjYGXqcniuC0I0t", "full_name": "Estevao Willian", "number": 41},
+            {"id": "5B6hcw4DeoNbErm7SvyO8q", "full_name": "Marc Guiu", "number": 38},
+            {"id": "5TPRJGUee3s006iot0PUJJ", "full_name": "Facundo Buonanotte", "number": 40},
+            {"id": "5FWS1AnTemG10lai2fvrHk", "full_name": "Alejandro Garnacho", "number": 49},
             {"id": "3Fu6jUWvWDGabzNapGjtlz", "full_name": "Mykhailo Mudryk", "number": None}
         ]
