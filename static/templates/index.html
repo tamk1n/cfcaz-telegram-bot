@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <h2>Canlı Yayım Linkləri</h2>
+    <a href="{{ url_for('add_link') }}" class="btn btn-success">➕ Yeni Link Əlavə Et</a>
+</div>
+
+{% if links %}
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Oyun</th>
+            <th>Saat</th>
+            <th>Dil</th>
+            <th>Status</th>
+            <th>Əməliyyatlar</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for link in links %}
+        <tr>
+            <td>{{ link.id }}</td>
+            <td>{{ link.match_title }}</td>
+            <td>{{ link.match_time }}</td>
+            <td>{{ link.language }}</td>
+            <td>
+                {% if link.is_active %}
+                <span class="status-badge status-active">✓ Aktiv</span>
+                {% else %}
+                <span class="status-badge status-inactive">✗ Deaktiv</span>
+                {% endif %}
+            </td>
+            <td>
+                <div class="actions">
+                    <a href="{{ url_for('toggle_active', link_id=link.id) }}" class="btn btn-warning btn-sm">
+                        {% if link.is_active %}Deaktiv et{% else %}Aktiv et{% endif %}
+                    </a>
+                    <a href="{{ url_for('edit_link', link_id=link.id) }}" class="btn btn-sm">Redaktə</a>
+                    <a href="{{ url_for('delete_link', link_id=link.id) }}" class="btn btn-danger btn-sm"
+                        onclick="return confirm('Bu linki silmək istədiyinizdən əminsiniz?')">Sil</a>
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+    <h3>Hələ heç bir link əlavə edilməyib</h3>
+    <p>Yeni oyun linki əlavə etmək üçün yuxarıdakı düyməyə basın</p>
+</div>
+{% endif %}
+{% endblock %}
