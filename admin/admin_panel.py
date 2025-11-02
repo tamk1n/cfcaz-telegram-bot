@@ -257,8 +257,11 @@ def view_statistics():
     return render_template('statistics.html', stats=stats)
 
 if __name__ == '__main__':
+    # Get port from environment variable (for Render deployment) or default to 5000
+    port = int(os.getenv('PORT', 5000))
+    
     print("=" * 50)
     print("Admin Panel başladıldı!")
-    print("URL: http://localhost:5000")
+    print(f"URL: http://localhost:{port}")
     
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=port)
