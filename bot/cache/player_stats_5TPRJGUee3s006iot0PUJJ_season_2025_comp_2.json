@@ -1,0 +1,1337 @@
+{
+  "timestamp": "2025-10-30T23:10:12.959601",
+  "data": {
+    "appearances": {
+      "title": "Appearances",
+      "stats": [
+        {
+          "title": "Men's Team Appearances",
+          "value": "2"
+        },
+        {
+          "title": "Minutes Played",
+          "value": "174"
+        },
+        {
+          "title": "Starts",
+          "value": "2"
+        },
+        {
+          "title": "Subbed On / Off",
+          "value": "0/2"
+        }
+      ]
+    },
+    "fouls": {
+      "yellowCards": {
+        "title": "Yellow Cards",
+        "value": "0"
+      },
+      "redCards": {
+        "title": "Red Cards",
+        "value": "0"
+      },
+      "foulsDrawn": {
+        "title": "Fouls Drawn",
+        "value": "4"
+      },
+      "foulsCommitted": {
+        "title": "Fouls Committed",
+        "value": "6"
+      }
+    },
+    "passes": {
+      "title": "Passes",
+      "forwards": {
+        "title": "Forward",
+        "value": "9"
+      },
+      "backwards": {
+        "title": "Back",
+        "value": "14"
+      },
+      "left": {
+        "title": "Left",
+        "value": "25"
+      },
+      "right": {
+        "title": "Right",
+        "value": "9"
+      }
+    },
+    "scoredWith": {
+      "title": "Scored With",
+      "head": {
+        "title": "Head",
+        "value": "0"
+      },
+      "leftFoot": {
+        "title": "Left Foot",
+        "value": "1"
+      },
+      "rightFoot": {
+        "title": "Right Foot",
+        "value": "0"
+      },
+      "penalties": {
+        "title": "Penalties",
+        "value": "0"
+      },
+      "freeKicks": {
+        "title": "Free Kicks",
+        "value": "0"
+      }
+    },
+    "goals": {
+      "title": "Goals",
+      "playerRankingLabel": "Overall Team Ranking",
+      "playerRankingValue": "2",
+      "teamRankingLabel": "Team Rankings",
+      "goalsBoxLabel": "Goals Inside/Outside Box",
+      "goalsOutsideBox": 0,
+      "goalsInsideBox": 100,
+      "playerAvatar": {
+        "image": {
+          "id": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+          "title": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+          "description": "",
+          "credit": "",
+          "file": {
+            "fileName": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+            "contentType": "image",
+            "type": "upload",
+            "format": "png",
+            "url": "http://img.chelseafc.com/image/upload/v1756739612/editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg.png",
+            "urlObject": {
+              "baseUrl": "https://res.cloudinary.com/",
+              "cloudName": "chelsea-production",
+              "resourceType": "image",
+              "type": "upload",
+              "publicId": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg"
+            },
+            "details": {
+              "size": 14720482,
+              "transformations": "",
+              "image": {
+                "width": 3333,
+                "height": 3333
+              }
+            }
+          },
+          "coordinates": []
+        }
+      },
+      "teamRankings": [
+        {
+          "playerRank": "1st",
+          "rankValue": 1,
+          "playerAvatar": {
+            "lastName": "George",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756849790/editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13284449,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "a3f0a9c9-4d60-492c-847d-93288c62ac3a",
+              "title": "George",
+              "url": "/en/teams/profile/tyrique-george",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "2"
+        },
+        {
+          "playerRank": "2nd",
+          "rankValue": 2,
+          "playerAvatar": {
+            "lastName": "Gittens",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756485798/editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg"
+                },
+                "details": {
+                  "size": 12994837,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "dc2741cb-3baa-4e64-8866-14cacdbcd49b",
+              "title": "Gittens",
+              "url": "/en/teams/profile/jamie-gittens",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "1"
+        },
+        {
+          "playerRank": "2nd",
+          "rankValue": 2,
+          "playerAvatar": {
+            "lastName": "Willian",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+              "title": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1754420045/editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg"
+                },
+                "details": {
+                  "size": 4410590,
+                  "transformations": "",
+                  "image": {
+                    "width": 1882,
+                    "height": 1882
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "dad680df-16ca-443a-8703-29c930f653de",
+              "title": "Willian",
+              "url": "/en/teams/profile/estevao",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "1"
+        },
+        {
+          "playerRank": "2nd",
+          "rankValue": 2,
+          "playerAvatar": {
+            "lastName": "Santos",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766187/editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13392851,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "d2e22b5c-5e98-4206-8069-3b7efb0eceed",
+              "title": "Santos",
+              "url": "/en/teams/profile/andrey-santos",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "1"
+        },
+        {
+          "playerRank": "2nd",
+          "rankValue": 2,
+          "playerAvatar": {
+            "lastName": "Buonanotte",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+              "title": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756739612/editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg"
+                },
+                "details": {
+                  "size": 14720482,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "b9e53479-e654-4c2a-a5e0-701ab48048d6",
+              "title": "Buonanotte",
+              "url": "/en/teams/profile/facundo-buonanotte",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "1"
+        }
+      ],
+      "stats": [
+        {
+          "title": "Total Goals",
+          "value": "1"
+        },
+        {
+          "title": "Goals Per Match",
+          "value": "0.50"
+        },
+        {
+          "title": "Minutes Per Goal",
+          "value": "174"
+        }
+      ]
+    },
+    "passSuccess": {
+      "title": "Pass Success Rate",
+      "playerRankingLabel": "Overall Team Ranking",
+      "playerRankingValue": "6",
+      "playerRankingPercent": "91",
+      "teamRankingLabel": "Team Rankings",
+      "stats": [
+        {
+          "title": "Total Passes",
+          "value": "57"
+        },
+        {
+          "title": "Key Passes",
+          "value": "1"
+        },
+        {
+          "title": "Successful Crosses",
+          "value": "0"
+        },
+        {
+          "title": "Assists",
+          "value": "0"
+        }
+      ],
+      "teamRankings": [
+        {
+          "playerRank": "1st",
+          "overallTeamRankingPercent": "100",
+          "rankValue": 1,
+          "playerAvatar": {
+            "lastName": "Garnacho",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Alejandro_Garnacho_profile_headshot_2025-26-removebg",
+              "title": "editorial/people/first-team/2025-26/Alejandro_Garnacho_profile_headshot_2025-26-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Alejandro_Garnacho_profile_headshot_2025-26-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756735497/editorial/people/first-team/2025-26/Alejandro_Garnacho_profile_headshot_2025-26-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Alejandro_Garnacho_profile_headshot_2025-26-removebg"
+                },
+                "details": {
+                  "size": 12505616,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "97734777-9260-4a7f-8f9b-c9a3459e435f",
+              "title": "Garnacho",
+              "url": "/en/teams/profile/alejandro-garnacho",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "100%"
+        },
+        {
+          "playerRank": "2nd",
+          "overallTeamRankingPercent": "94",
+          "rankValue": 2,
+          "playerAvatar": {
+            "lastName": "Hato ",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Jorrel_Hato_headshot_2025-26_avatar-removebg",
+              "title": "editorial/people/first-team/2025-26/Jorrel_Hato_headshot_2025-26_avatar-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Jorrel_Hato_headshot_2025-26_avatar-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1754296775/editorial/people/first-team/2025-26/Jorrel_Hato_headshot_2025-26_avatar-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Jorrel_Hato_headshot_2025-26_avatar-removebg"
+                },
+                "details": {
+                  "size": 14372516,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "82682646-0ffc-41e9-9a88-a0b0ddb72387",
+              "title": "Hato ",
+              "url": "/en/teams/profile/jorrel-hato",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "94%"
+        },
+        {
+          "playerRank": "3rd",
+          "overallTeamRankingPercent": "94",
+          "rankValue": 3,
+          "playerAvatar": {
+            "lastName": "Acheampong",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Josh_Acheampong_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Josh_Acheampong_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Josh_Acheampong_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766430/editorial/people/first-team/2025-26/Josh_Acheampong_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Josh_Acheampong_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13534562,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "e2e2a130-fe83-44ae-9cf3-0d5020b9e3cd",
+              "title": "Acheampong",
+              "url": "/en/teams/profile/josh-acheampong",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "94%"
+        },
+        {
+          "playerRank": "4th",
+          "overallTeamRankingPercent": "92",
+          "rankValue": 4,
+          "playerAvatar": {
+            "lastName": "Fofana",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Wesley_Fofana_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Wesley_Fofana_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Wesley_Fofana_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766696/editorial/people/first-team/2025-26/Wesley_Fofana_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Wesley_Fofana_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 14161320,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "d54e95aa-6c8c-4191-92ab-f4c72e98961a",
+              "title": "Fofana",
+              "url": "/en/teams/profile/wesley-fofana",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "92%"
+        },
+        {
+          "playerRank": "5th",
+          "overallTeamRankingPercent": "92",
+          "rankValue": 5,
+          "playerAvatar": {
+            "lastName": "Lavia",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Romeo_Lavia_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Romeo_Lavia_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Romeo_Lavia_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766632/editorial/people/first-team/2025-26/Romeo_Lavia_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Romeo_Lavia_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 14517908,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "430e36e8-9cbb-4957-9bbe-bf3d5df5a544",
+              "title": "Lavia",
+              "url": "/en/teams/profile/romeo-lavia",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "92%"
+        },
+        {
+          "playerRank": "6th",
+          "overallTeamRankingPercent": "91",
+          "rankValue": 6,
+          "playerAvatar": {
+            "lastName": "Buonanotte",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+              "title": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756739612/editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Facundo_Buonanotte_profile_headshot_2025-26-removebg"
+                },
+                "details": {
+                  "size": 14720482,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "8b95550e-ce5c-4061-bee2-8035aef74d99",
+              "title": "Buonanotte",
+              "url": "/en/teams/profile/facundo-buonanotte",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "91%"
+        },
+        {
+          "playerRank": "7th",
+          "overallTeamRankingPercent": "90",
+          "rankValue": 7,
+          "playerAvatar": {
+            "lastName": "Adarabioyo",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Tosin_Adarabioyo_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Tosin_Adarabioyo_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Tosin_Adarabioyo_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766673/editorial/people/first-team/2025-26/Tosin_Adarabioyo_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Tosin_Adarabioyo_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13547357,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "c46d64f1-9931-4188-b5fb-a73d20af6a55",
+              "title": "Adarabioyo",
+              "url": "/en/teams/profile/tosin-adarabioyo",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "90%"
+        },
+        {
+          "playerRank": "8th",
+          "overallTeamRankingPercent": "88",
+          "rankValue": 8,
+          "playerAvatar": {
+            "lastName": "Chalobah",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Trevoh_Chalobah_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Trevoh_Chalobah_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Trevoh_Chalobah_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766685/editorial/people/first-team/2025-26/Trevoh_Chalobah_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Trevoh_Chalobah_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13655926,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "ded51129-73c9-4452-a99a-637f819f36da",
+              "title": "Chalobah",
+              "url": "/en/teams/profile/trevoh-chalobah",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "88%"
+        },
+        {
+          "playerRank": "9th",
+          "overallTeamRankingPercent": "87",
+          "rankValue": 9,
+          "playerAvatar": {
+            "lastName": "Neto",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Pedro_Neto_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Pedro_Neto_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Pedro_Neto_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766634/editorial/people/first-team/2025-26/Pedro_Neto_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Pedro_Neto_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13348891,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "97ebf366-9e3b-4028-852d-a6201dec6d7e",
+              "title": "Neto",
+              "url": "/en/teams/profile/pedro-neto",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "87%"
+        },
+        {
+          "playerRank": "10th",
+          "overallTeamRankingPercent": "86",
+          "rankValue": 10,
+          "playerAvatar": {
+            "lastName": "Gusto",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Malo_Gusto_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Malo_Gusto_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Malo_Gusto_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766544/editorial/people/first-team/2025-26/Malo_Gusto_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Malo_Gusto_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13927271,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "d442fb97-e0a2-4c72-9ad1-e60d6a77be80",
+              "title": "Gusto",
+              "url": "/en/teams/profile/malo-gusto",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "86%"
+        },
+        {
+          "playerRank": "11th",
+          "overallTeamRankingPercent": "85",
+          "rankValue": 11,
+          "playerAvatar": {
+            "lastName": "George",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756849790/editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Tyrique_George_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13284449,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "20d5c1cb-6c8c-4ff8-8f07-e88dddf35247",
+              "title": "George",
+              "url": "/en/teams/profile/tyrique-george",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "85%"
+        },
+        {
+          "playerRank": "12th",
+          "overallTeamRankingPercent": "84",
+          "rankValue": 12,
+          "playerAvatar": {
+            "lastName": "Santos",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766187/editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Andrey_Santos_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 13392851,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "bc0aef3b-9005-4253-814e-dea906db8113",
+              "title": "Santos",
+              "url": "/en/teams/profile/andrey-santos",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "84%"
+        },
+        {
+          "playerRank": "13th",
+          "overallTeamRankingPercent": "83",
+          "rankValue": 13,
+          "playerAvatar": {
+            "lastName": "Willian",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+              "title": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1754420045/editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Estevao_headshot_2025-26_avatar-removebg"
+                },
+                "details": {
+                  "size": 4410590,
+                  "transformations": "",
+                  "image": {
+                    "width": 1882,
+                    "height": 1882
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "ff206527-f2c7-453d-acc1-6e9a815c46dc",
+              "title": "Willian",
+              "url": "/en/teams/profile/estevao",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "83%"
+        },
+        {
+          "playerRank": "14th",
+          "overallTeamRankingPercent": "82",
+          "rankValue": 14,
+          "playerAvatar": {
+            "lastName": "Gittens",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756485798/editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Jamie_Gittens_profile_2025-26_headshot-removebg"
+                },
+                "details": {
+                  "size": 12994837,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "73128b2c-5e7e-45b0-9634-41538dda3cd6",
+              "title": "Gittens",
+              "url": "/en/teams/profile/jamie-gittens",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "82%"
+        },
+        {
+          "playerRank": "15th",
+          "overallTeamRankingPercent": "79",
+          "rankValue": 15,
+          "playerAvatar": {
+            "lastName": "Fernandez",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Enzo_Fernandez_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Enzo_Fernandez_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Enzo_Fernandez_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766288/editorial/people/first-team/2025-26/Enzo_Fernandez_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Enzo_Fernandez_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 14142518,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "a31648f1-d470-4ffd-bbbc-7106498c8948",
+              "title": "Fernandez",
+              "url": "/en/teams/profile/enzo-fernandez",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "79%"
+        },
+        {
+          "playerRank": "16th",
+          "overallTeamRankingPercent": "76",
+          "rankValue": 16,
+          "playerAvatar": {
+            "lastName": "Jorgensen",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Filip_Jorgensen_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Filip_Jorgensen_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Filip_Jorgensen_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766357/editorial/people/first-team/2025-26/Filip_Jorgensen_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Filip_Jorgensen_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 11095468,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "abffc5f6-486f-4800-adb1-61663c863611",
+              "title": "Jorgensen",
+              "url": "/en/teams/profile/filip-jorgensen",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "76%"
+        },
+        {
+          "playerRank": "17th",
+          "overallTeamRankingPercent": "75",
+          "rankValue": 17,
+          "playerAvatar": {
+            "lastName": "Delap",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Liam_Delap_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Liam_Delap_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Liam_Delap_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766436/editorial/people/first-team/2025-26/Liam_Delap_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Liam_Delap_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 14298317,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "8ac5ef64-1620-4cd1-9f83-f5f9220abc7b",
+              "title": "Delap",
+              "url": "/en/teams/profile/liam-delap",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "75%"
+        },
+        {
+          "playerRank": "17th",
+          "overallTeamRankingPercent": "75",
+          "rankValue": 17,
+          "playerAvatar": {
+            "lastName": "Cucurella",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Marc_Cucurella_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Marc_Cucurella_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Marc_Cucurella_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766504/editorial/people/first-team/2025-26/Marc_Cucurella_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Marc_Cucurella_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 15893159,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "f7ca5acf-c9f4-4a72-811b-6d1473793b15",
+              "title": "Cucurella",
+              "url": "/en/teams/profile/marc-cucurella",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "75%"
+        },
+        {
+          "playerRank": "18th",
+          "overallTeamRankingPercent": "71",
+          "rankValue": 18,
+          "playerAvatar": {
+            "lastName": "Caicedo",
+            "image": {
+              "id": "editorial/people/first-team/2025-26/Moises_Caicedo_2025-26_profile_with_patch_headshot-removebg",
+              "title": "editorial/people/first-team/2025-26/Moises_Caicedo_2025-26_profile_with_patch_headshot-removebg",
+              "description": "",
+              "credit": "",
+              "file": {
+                "fileName": "editorial/people/first-team/2025-26/Moises_Caicedo_2025-26_profile_with_patch_headshot-removebg",
+                "contentType": "image",
+                "type": "upload",
+                "format": "png",
+                "url": "http://img.chelseafc.com/image/upload/v1756766521/editorial/people/first-team/2025-26/Moises_Caicedo_2025-26_profile_with_patch_headshot-removebg.png",
+                "urlObject": {
+                  "baseUrl": "https://res.cloudinary.com/",
+                  "cloudName": "chelsea-production",
+                  "resourceType": "image",
+                  "type": "upload",
+                  "publicId": "editorial/people/first-team/2025-26/Moises_Caicedo_2025-26_profile_with_patch_headshot-removebg"
+                },
+                "details": {
+                  "size": 12213259,
+                  "transformations": "",
+                  "image": {
+                    "width": 3333,
+                    "height": 3333
+                  }
+                }
+              },
+              "coordinates": []
+            },
+            "profileLink": {
+              "id": "7095bf24-f2bd-4691-bb87-50051f7b90f8",
+              "title": "Caicedo",
+              "url": "/en/teams/profile/moises-caicedo",
+              "isExternal": false,
+              "isActive": false
+            }
+          },
+          "playerAdditionalStat": "71%"
+        }
+      ]
+    },
+    "touches": {
+      "title": "Touches",
+      "stats": [
+        {
+          "title": "Total Touches",
+          "value": "88",
+          "rankingLabel": "Team Ranking",
+          "rank": "9th"
+        },
+        {
+          "title": "Tackles Won / Lost",
+          "value": "3/0",
+          "rankingLabel": "Team Ranking",
+          "rank": "-"
+        },
+        {
+          "title": "Clearances",
+          "value": "0",
+          "rankingLabel": "Team Ranking",
+          "rank": "-"
+        },
+        {
+          "title": "Interceptions",
+          "value": "3",
+          "rankingLabel": "Team Ranking",
+          "rank": "2nd"
+        },
+        {
+          "title": "Duels Won / Lost",
+          "value": "10/16",
+          "rankingLabel": "Team Ranking",
+          "rank": "9th"
+        },
+        {
+          "title": "Blocks",
+          "value": "0",
+          "rankingLabel": "Team Ranking",
+          "rank": "-"
+        }
+      ]
+    },
+    "passCompletion": {
+      "title": "Pass Completion %",
+      "teamAverageTitle": "Team Average",
+      "teamShortPasses": "90",
+      "teamLongPasses": "40",
+      "playerShortPasses": {
+        "title": "Short Balls",
+        "value": "91"
+      },
+      "playerLongPasses": {
+        "title": "Long Balls",
+        "value": "100"
+      }
+    },
+    "shots": {
+      "title": "Shots",
+      "shotsOnTargetTitle": "Shots On Target",
+      "shotsOffTargetTitle": "Shots Off Target",
+      "woodworkHitTitle": "Woodwork Hit",
+      "playerTitle": "Player",
+      "playerShotsOnTarget": "2",
+      "playerShotsOffTarget": "1",
+      "playerWoodworkHit": "0",
+      "teamAverageTitle": "Team Average",
+      "teamShotsOnTarget": "1",
+      "teamShotsOffTarget": "1",
+      "teamWoodworkHit": "0"
+    },
+    "seasons": [
+      {
+        "displayText": "2025/26",
+        "value": "2025",
+        "selectedValue": true
+      }
+    ],
+    "competitions": [
+      {
+        "displayText": "Carabao Cup",
+        "value": "2",
+        "selectedValue": true
+      },
+      {
+        "displayText": "UEFA Champions League",
+        "value": "5",
+        "selectedValue": false
+      },
+      {
+        "displayText": "Premier League",
+        "value": "8",
+        "selectedValue": false
+      }
+    ]
+  }
+}
