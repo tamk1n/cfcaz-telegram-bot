@@ -6,6 +6,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 CHELSEA_API_URL = os.getenv('CHELSEA_API_URL')
 LEAGUE_TABLE_API_URL = os.getenv('LEAGUE_TABLE_API_URL')
+CHAMPIONS_LEAGUE_TABLE_URL = os.getenv('CHAMPIONS_LEAGUE_TABLE_URL')
 RESULTS_API_URL = os.getenv('RESULTS_API_URL')
 PLAYER_STATS_API_URL = os.getenv('PLAYER_STATS_API_URL')
 
@@ -13,6 +14,14 @@ FIXTURES_CACHE_HOURS = float(os.getenv('FIXTURES_CACHE_HOURS', 2))
 RESULTS_CACHE_HOURS = float(os.getenv('RESULTS_CACHE_HOURS', 0.5))
 PLAYER_STATS_CACHE_HOURS = float(os.getenv('PLAYER_STATS_CACHE_HOURS', 24))
 LEAGUE_TABLE_CACHE_HOURS = float(os.getenv('LEAGUE_TABLE_CACHE_HOURS', 2))
+
+ADMIN_SECRET_KEY = os.getenv('ADMIN_SECRET_KEY')
+ADMIN_USERNAME = os.getenv('ADMIN_USERNAME')
+ADMIN_PASSWORD = os.getenv('ADMIN_PASSWORD')
+
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_KEY')
 
 WEEKDAYS = {
     "Sun": "Bazar",
@@ -73,3 +82,10 @@ PLAYERS = [
             {"id": "5FWS1AnTemG10lai2fvrHk", "full_name": "Alejandro Garnacho", "number": 49},
             {"id": "3Fu6jUWvWDGabzNapGjtlz", "full_name": "Mykhailo Mudryk", "number": None}
         ]
+
+COMPETITIONS_AZ = {
+    "1": "FA Kuboku",                      # FA Cup
+    "2": "Karabo Kuboku",                  # Carabao Cup
+    "5": "UEFA Çempionlar Liqası",         # UEFA Champions League
+    "8": "Premyer Liqa",                   # Premier League
+}

@@ -1,6 +1,61 @@
 from datetime import datetime, timedelta
 import pytz
+import logging
+import os
+from supabase import create_client, Client
+from functools import wraps
 import settings
+
+logger = logging.getLogger(__name__)
+
+def get_supabase_client() -> Client:
+    """Get Supabase client instance"""
+    url = os.getenv("SUPABASE_URL")
+    key = os.getenv("SUPABASE_KEY")
+    
+    if not url or not key:
+        raise ValueError("SUPABASE_URL and SUPABASE_KEY environment variables are required")
+    
+    return create_client(url, key)
+
+async def track_user(update, context):
+    """Track user information in Supabase"""
+    try:
+        user = update.effective_user
+        if not user:
+            return
+        
+        supabase_client = get_supabase_client()
+        
+        user_data = {
+            "telegram_id": user.id,
+            "username": user.username,
+            "first_name": user.first_name,
+            "last_name": user.last_name,
+            "language_code": user.language_code,
+            "last_active": datetime.now().isoformat()
+        }
+        
+        # Upsert user data (insert or update if exists)
+        supabase_client.table("Users").upsert(
+            user_data,
+            on_conflict="telegram_id"
+        ).execute()
+        
+        logger.info(f"Tracked user: {user.id} - {user.username}")
+        
+    except Exception as e:
+        logger.error(f"Error tracking user: {e}")
+
+def track_user_activity(func):
+    """Decorator to track user activity for command handlers"""
+    @wraps(func)
+    async def wrapper(update, context):
+        # Track user before executing the command
+        await track_user(update, context)
+        # Execute the original function
+        return await func(update, context)
+    return wrapper
 
 def convert_to_azerbaijan_time(date_str, time_str):
     """Convert match date and time to Azerbaijan timezone (UTC+4)"""
