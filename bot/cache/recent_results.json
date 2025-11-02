@@ -1,9 +1,9 @@
 {
-  "timestamp": "2025-11-02T16:37:06.157970",
+  "timestamp": "2025-11-02T17:28:40.621625",
   "data": {
     "items": [
       {
-        "id": "dcc45593-9758-499e-b4e0-fe9ec165cbff",
+        "id": "99ca158a-031b-4c93-a7c7-a0dab79f950e",
         "month": 10,
         "year": 2025,
         "monthName": "October",
@@ -43,7 +43,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "fa333e4f-1d3f-4cdc-bb91-9c11b073889e",
+                "id": "1c628d36-3033-47ef-9711-06563dffeef2",
                 "title": "Match Centre",
                 "url": "/en/match/wolverhampton-wanderers-vs-chelsea-english-league-cup-2025-10-29",
                 "isExternal": false,
@@ -95,7 +95,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "103de668-95c2-4b60-a9b0-fb7152c6e9ea",
+                "id": "b0341cdd-b273-4825-8c81-8eb675bfbfd8",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-sunderland-english-premier-league-2025-10-25",
                 "isExternal": false,
@@ -147,7 +147,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "a7e0be49-65e0-4ef9-8a01-0981a53b25a3",
+                "id": "4b581a87-fa16-4dc0-91ae-22fe416d98a8",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-ajax-uefa-champions-league-2025-10-22",
                 "isExternal": false,
@@ -199,7 +199,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "e486e40a-c954-46fa-b02c-0c7b79171c28",
+                "id": "34215c5a-9c1a-47e7-bde7-cf29c4830dd7",
                 "title": "Match Centre",
                 "url": "/en/match/nottingham-forest-vs-chelsea-english-premier-league-2025-10-18",
                 "isExternal": false,
@@ -251,7 +251,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "6447f874-10bd-43f5-8852-c6f7ed4038ee",
+                "id": "b3675506-276f-4b3d-8344-da0cdbabb5c9",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-liverpool-english-premier-league-2025-10-04",
                 "isExternal": false,
@@ -271,7 +271,7 @@
         ]
       },
       {
-        "id": "1982f740-bff7-49ad-b13e-e470e3f334b3",
+        "id": "c83089cd-3519-47a6-b718-13a57a5934b9",
         "month": 9,
         "year": 2025,
         "monthName": "September",
@@ -311,7 +311,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "0c815e08-c9ed-4497-ab49-9ef40d5972c7",
+                "id": "5e33d85f-2d66-40c2-b85a-59e5fb2823a7",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-benfica-uefa-champions-league-2025-09-30",
                 "isExternal": false,
@@ -363,7 +363,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "b046ba86-9dce-4365-8f8e-b97b77a4492e",
+                "id": "2ab0979d-c37d-44d2-9ca7-fb6c6a8b8b13",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-brighton-and-hove-albion-english-premier-league-2025-09-27",
                 "isExternal": false,
@@ -415,7 +415,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "842a055a-20f9-4627-b4e4-81d7201c9396",
+                "id": "74a92910-6578-4e41-ae6c-03706520aa8e",
                 "title": "Match Centre",
                 "url": "/en/match/lincoln-city-vs-chelsea-english-league-cup-2025-09-23",
                 "isExternal": false,
@@ -467,7 +467,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "68d69671-60e6-4f65-9f69-47571ba3e126",
+                "id": "942f4e37-be68-4ba0-b29e-44d7bf8195f2",
                 "title": "Match Centre",
                 "url": "/en/match/manchester-united-vs-chelsea-english-premier-league-2025-09-20",
                 "isExternal": false,
@@ -519,7 +519,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "5be67b2d-3588-4f46-ae32-632c542f8056",
+                "id": "247f3796-32d3-4279-8e8c-3a616980d9d9",
                 "title": "Match Centre",
                 "url": "/en/match/fc-bayern-m%C3%BCnchen-vs-chelsea-uefa-champions-league-2025-09-17",
                 "isExternal": false,
@@ -571,7 +571,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "b32036e4-56d5-4e69-8c83-872459a2bb3e",
+                "id": "49de26e2-3e89-439c-b5e5-9819a81c5b3f",
                 "title": "Match Centre",
                 "url": "/en/match/brentford-vs-chelsea-english-premier-league-2025-09-13",
                 "isExternal": false,
@@ -591,7 +591,7 @@
         ]
       },
       {
-        "id": "779010a6-4608-41cb-8d00-ff1a0cd2ad6a",
+        "id": "ad3a2e67-4c22-484a-8e53-a704dbb5795d",
         "month": 8,
         "year": 2025,
         "monthName": "August",
@@ -631,7 +631,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "52bf89d9-f0aa-4701-a727-715a4850af98",
+                "id": "5d9ec9f7-368e-471f-bbd9-ef6892cb714a",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-fulham-english-premier-league-2025-08-30",
                 "isExternal": false,
@@ -683,7 +683,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "1fafb2d1-9133-4d0d-9452-efefe88656e7",
+                "id": "e99dfbba-eb40-401b-90ed-05acb261509c",
                 "title": "Match Centre",
                 "url": "/en/match/west-ham-united-vs-chelsea-english-premier-league-2025-08-22",
                 "isExternal": false,
@@ -735,7 +735,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "49123d41-3cdf-4a80-acd8-b4c458668691",
+                "id": "3c6b4e78-334e-4d0f-af3f-93f0565a731c",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-crystal-palace-english-premier-league-2025-08-17",
                 "isExternal": false,
@@ -787,7 +787,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "200b03a7-69be-48aa-a357-e45df2712a36",
+                "id": "70b78edf-49ad-4439-b529-f229668c0122",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-milan-friendly-2025-08-10",
                 "isExternal": false,
@@ -839,7 +839,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "b864300f-1203-40b8-8b73-59ad126136bc",
+                "id": "37dea6d6-c6b0-4db1-ad34-d15133a77938",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-bayer-04-leverkusen-friendly-2025-08-08",
                 "isExternal": false,
@@ -859,7 +859,7 @@
         ]
       },
       {
-        "id": "4165fb92-7bf0-46d7-b5e8-810d612e48d5",
+        "id": "67e3247a-e911-4ecc-90b1-8348ea47ef80",
         "month": 7,
         "year": 2025,
         "monthName": "July",
@@ -899,7 +899,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "bf7bc48b-c4f6-495f-ad60-6756ad735013",
+                "id": "0490b45c-d9fa-41dd-b559-79850c1bbed3",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-paris-saintgermain-fifa-club-world-cup-2025-07-13",
                 "isExternal": false,
@@ -951,7 +951,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "dbe8c8d7-199f-460c-8015-1a24f9211f02",
+                "id": "68ccea14-38e7-4733-8f34-b30fd5b54b89",
                 "title": "Match Centre",
                 "url": "/en/match/fluminense-vs-chelsea-fifa-club-world-cup-2025-07-08",
                 "isExternal": false,
@@ -1003,7 +1003,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "c4d10789-74fa-4143-956d-ad0336971b19",
+                "id": "6a47f1c3-3201-4983-b526-c5c625b7e402",
                 "title": "Match Centre",
                 "url": "/en/match/palmeiras-vs-chelsea-fifa-club-world-cup-2025-07-05",
                 "isExternal": false,
@@ -1023,7 +1023,7 @@
         ]
       },
       {
-        "id": "5f103551-a3f7-44e6-8ffc-961ddef19008",
+        "id": "820999a7-ac69-4f06-8e1f-03a02d8903b4",
         "month": 6,
         "year": 2025,
         "monthName": "June",
@@ -1063,7 +1063,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "30734b2f-fe94-481c-96a5-700ffe9b434f",
+                "id": "5d6a4460-6817-4bd0-b67b-f8b9ee9d2e51",
                 "title": "Match Centre",
                 "url": "/en/match/benfica-vs-chelsea-fifa-club-world-cup-2025-06-28",
                 "isExternal": false,
@@ -1115,7 +1115,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "5b5d1602-b8d5-4e20-89ff-1705dfcb569c",
+                "id": "7e36d8da-1506-4338-87ab-600546ed421b",
                 "title": "Match Centre",
                 "url": "/en/match/es-tunis-vs-chelsea-fifa-club-world-cup-2025-06-25",
                 "isExternal": false,
@@ -1167,7 +1167,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "f9330f89-82d2-4a94-b651-82d23c070a77",
+                "id": "1c6470e0-5940-44c4-9fc7-6190624a4402",
                 "title": "Match Centre",
                 "url": "/en/match/flamengo-vs-chelsea-fifa-club-world-cup-2025-06-20",
                 "isExternal": false,
@@ -1219,7 +1219,7 @@
             "postponed": false,
             "ctas": {
               "matchCentreLink": {
-                "id": "ec98affe-da7a-48b8-8995-7fa394223c00",
+                "id": "6ed67e2b-2457-4cc0-ab4d-ad05cc5d9b48",
                 "title": "Match Centre",
                 "url": "/en/match/chelsea-vs-los-angeles-football-club-fifa-club-world-cup-2025-06-16",
                 "isExternal": false,
@@ -1423,7 +1423,7 @@
         "postponed": false,
         "ctas": {
           "matchCentreLink": {
-            "id": "381be51c-8e27-470a-9bbd-0922b224d5f1",
+            "id": "5684c09d-21bd-43eb-b95f-ceff5191e53f",
             "title": "Match Centre",
             "url": "/en/match/tottenham-hotspur-vs-chelsea-english-premier-league-2025-11-01",
             "isExternal": false,
@@ -1446,7 +1446,7 @@
           "title": "Full Match: Tottenham 0-1 Chelsea ",
           "type": "Video",
           "category": {
-            "id": "e5a64ef9-6a30-41af-b7c3-9185be31427b",
+            "id": "fb0c9678-6e2c-491a-86c6-2f5c3edd02e4",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
@@ -1498,7 +1498,7 @@
           "title": "Extended: Tottenham 0-1 Chelsea ",
           "type": "Video",
           "category": {
-            "id": "e0470a94-0ed9-44a5-8f09-a998d30607b2",
+            "id": "7789e339-9056-420f-af48-31605123b7a4",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
@@ -1549,7 +1549,7 @@
           "title": "Highlights: Tottenham 0-1 Chelsea ",
           "type": "Video",
           "category": {
-            "id": "e6945697-7dce-4385-a836-4609776bcf73",
+            "id": "0a36b936-f3e9-442a-9c9d-e03fd6799b08",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
@@ -1601,7 +1601,7 @@
           "title": "Caicedo's post-match reaction🎤",
           "type": "Video",
           "category": {
-            "id": "213a57d2-39e9-4565-98c9-72b2e226b63a",
+            "id": "bbfd7587-034e-4848-ac66-8f78b97f659a",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
@@ -1652,7 +1652,7 @@
           "title": "Enzo reacts post-Spurs🎤",
           "type": "Video",
           "category": {
-            "id": "e08b8b21-a47c-4ccc-b16d-f04822c67901",
+            "id": "d36f3b64-1743-4305-8ea6-e1cdeb6f8ab6",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
@@ -1703,7 +1703,7 @@
           "title": "Line-up locked in to face Spurs 🤩",
           "type": "Video",
           "category": {
-            "id": "082265ad-b139-4c90-a416-d729fac351bc",
+            "id": "16cb39b2-fc99-414f-9c06-2254fb0e2a46",
             "title": "Video",
             "url": "/en/news/category/video",
             "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",

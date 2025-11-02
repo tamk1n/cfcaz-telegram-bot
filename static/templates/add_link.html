@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 style="margin-bottom: 30px;">Yeni Oyun Linki Əlavə Et</h2>
+
+<form method="POST" style="max-width: 600px;">
+    <div class="form-group">
+        <label>Oyun Adı *</label>
+        <input type="text" name="match_title" placeholder="məs: Chelsea vs Arsenal" required>
+    </div>
+
+    <div class="form-group">
+        <label>Saat *</label>
+        <div style="display: flex; align-items: center; gap: 5px;">
+            <input type="number" name="match_hour" min="0" max="23" placeholder="20" style="width: 80px;" required>
+            <span style="font-weight: bold;">:</span>
+            <input type="number" name="match_minute" min="0" max="59" placeholder="00" style="width: 80px;" required>
+        </div>
+        <small style="color: #666; display: block; margin-top: 5px;">24 saat formatı (məs: 20:30)</small>
+    </div>
+
+    <div class="form-group">
+        <label>Dil *</label>
+        <select name="language" required
+            style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-size: 14px; background: white; cursor: pointer;">
+            <option value="az">🇦🇿 Azərbaycan dili</option>
+            <option value="en">🇬🇧 İngilis dili</option>
+            <option value="ru">🇷🇺 Rus dili</option>
+            <option value="tr">🇹🇷 Türk dili</option>
+            <option value="other">🌐 Digər</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Canlı Yayım Linki *</label>
+        <input type="url" name="stream_url" placeholder="https://..." required>
+    </div>
+
+    <div class="form-group">
+        <div class="checkbox-group">
+            <input type="checkbox" name="is_active" id="is_active" checked>
+            <label for="is_active" style="margin: 0;">Aktiv (Botda göstər)</label>
+        </div>
+    </div>
+
+    <div style="display: flex; gap: 10px;">
+        <button type="submit" class="btn btn-success">Əlavə Et</button>
+        <a href="{{ url_for('index') }}" class="btn">Ləğv Et</a>
+    </div>
+</form>
+{% endblock %}
