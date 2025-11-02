@@ -1,0 +1,1755 @@
+{
+  "timestamp": "2025-11-02T16:37:06.157970",
+  "data": {
+    "items": [
+      {
+        "id": "dcc45593-9758-499e-b4e0-fe9ec165cbff",
+        "month": 10,
+        "year": 2025,
+        "monthName": "October",
+        "items": [
+          {
+            "id": "752vDfZtWI3caWdVd54l70",
+            "optaId": "2606490",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Wolverhampton Wanderers",
+                "clubShortName": "Wolves",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/740.png",
+                "score": 3
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 4
+              },
+              "kickoffTime": "19:45",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Molineux Stadium",
+            "competition": "Carabao Cup",
+            "kickoffDate": "Wed 29 Oct 2025",
+            "kickoffTime": "19:45",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "fa333e4f-1d3f-4cdc-bb91-9c11b073889e",
+                "title": "Match Centre",
+                "url": "/en/match/wolverhampton-wanderers-vs-chelsea-english-league-cup-2025-10-29",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "1jjYZom9dRzoKfjCvuyycd",
+            "optaId": "2561979",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Sunderland",
+                "clubShortName": "Sunderland",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/722.png",
+                "score": 2
+              },
+              "kickoffTime": "15:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 25 Oct 2025",
+            "kickoffTime": "15:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "103de668-95c2-4b60-a9b0-fb7152c6e9ea",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-sunderland-english-premier-league-2025-10-25",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "6Tf3OlZl3qJwghGMgoSAL",
+            "optaId": "2601838",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 5
+              },
+              "away": {
+                "clubName": "Ajax",
+                "clubShortName": "Ajax",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Custom/Ajax_Amsterdam.png",
+                "score": 1
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "UEFA Champions League",
+            "kickoffDate": "Wed 22 Oct 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "a7e0be49-65e0-4ef9-8a01-0981a53b25a3",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-ajax-uefa-champions-league-2025-10-22",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "3kqfnGSostPIkjXmf4ReLK",
+            "optaId": "2561971",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Nottingham Forest",
+                "clubShortName": "Nott'm Forest",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/17.png",
+                "score": 0
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 3
+              },
+              "kickoffTime": "12:30",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "The City Ground",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 18 Oct 2025",
+            "kickoffTime": "12:30",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "e486e40a-c954-46fa-b02c-0c7b79171c28",
+                "title": "Match Centre",
+                "url": "/en/match/nottingham-forest-vs-chelsea-english-premier-league-2025-10-18",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "6r4S0Vg57YYEInZGwU4Qa4",
+            "optaId": "2561959",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Liverpool",
+                "clubShortName": "Liverpool",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1730218742/editorial/opposition%20club%20badges/Liverpool_badge_2024-25_square_2_500x500.png",
+                "score": 1
+              },
+              "kickoffTime": "17:30",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 04 Oct 2025",
+            "kickoffTime": "17:30",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "6447f874-10bd-43f5-8852-c6f7ed4038ee",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-liverpool-english-premier-league-2025-10-04",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          }
+        ]
+      },
+      {
+        "id": "1982f740-bff7-49ad-b13e-e470e3f334b3",
+        "month": 9,
+        "year": 2025,
+        "monthName": "September",
+        "items": [
+          {
+            "id": "3lm9P7PqZ0b5GlrzPklKMR",
+            "optaId": "2601810",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Benfica",
+                "clubShortName": "Benfica",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/ChelseaFC/Benfica.png",
+                "score": 0
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "UEFA Champions League",
+            "kickoffDate": "Tue 30 Sept 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "0c815e08-c9ed-4497-ab49-9ef40d5972c7",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-benfica-uefa-champions-league-2025-09-30",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "3kxDztSD9TrLbyB9TX9Ae9",
+            "optaId": "2561947",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Brighton & Hove Albion",
+                "clubShortName": "Brighton",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/618.png",
+                "score": 3
+              },
+              "kickoffTime": "15:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 27 Sept 2025",
+            "kickoffTime": "15:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "b046ba86-9dce-4365-8f8e-b97b77a4492e",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-brighton-and-hove-albion-english-premier-league-2025-09-27",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "5EVR2MiCWJklU6NhxQXQ1M",
+            "optaId": "2603056",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Lincoln City",
+                "clubShortName": "Lincoln City",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/f_auto,w_300,q_90/editorial/opposition%20club%20badges/Lincoln_City_badge.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "kickoffTime": "19:45",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "LNER Stadium",
+            "competition": "Carabao Cup",
+            "kickoffDate": "Tue 23 Sept 2025",
+            "kickoffTime": "19:45",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "842a055a-20f9-4627-b4e4-81d7201c9396",
+                "title": "Match Centre",
+                "url": "/en/match/lincoln-city-vs-chelsea-english-league-cup-2025-09-23",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "2QoTdefs128PmlZjL8TQ7E",
+            "optaId": "2561941",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Manchester United",
+                "clubShortName": "Man Utd",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/680.png",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "kickoffTime": "17:30",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Old Trafford",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 20 Sept 2025",
+            "kickoffTime": "17:30",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "68d69671-60e6-4f65-9f69-47571ba3e126",
+                "title": "Match Centre",
+                "url": "/en/match/manchester-united-vs-chelsea-english-premier-league-2025-09-20",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "2TFxr1ZkwwUOdYn0rtBWnO",
+            "optaId": "2601798",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Bayern Munich",
+                "clubShortName": "Bayern Munich",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/FC_Bayern_Munich.png",
+                "score": 3
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Allianz Arena",
+            "competition": "UEFA Champions League",
+            "kickoffDate": "Wed 17 Sept 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "5be67b2d-3588-4f46-ae32-632c542f8056",
+                "title": "Match Centre",
+                "url": "/en/match/fc-bayern-m%C3%BCnchen-vs-chelsea-uefa-champions-league-2025-09-17",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "pYCmhLbaCmEHtM2XO9gVh",
+            "optaId": "2561927",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Brentford",
+                "clubShortName": "Brentford",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/f_auto,w_300,q_90/logos/team-logos/club_logo_brentford",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Gtech Community Stadium",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 13 Sept 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "b32036e4-56d5-4e69-8c83-872459a2bb3e",
+                "title": "Match Centre",
+                "url": "/en/match/brentford-vs-chelsea-english-premier-league-2025-09-13",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          }
+        ]
+      },
+      {
+        "id": "779010a6-4608-41cb-8d00-ff1a0cd2ad6a",
+        "month": 8,
+        "year": 2025,
+        "monthName": "August",
+        "items": [
+          {
+            "id": "5nr7y4ujuXKztdBMy5eon3",
+            "optaId": "2561917",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Fulham",
+                "clubShortName": "Fulham",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/654.png",
+                "score": 0
+              },
+              "kickoffTime": "12:30",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Premier League",
+            "kickoffDate": "Sat 30 Aug 2025",
+            "kickoffTime": "12:30",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "52bf89d9-f0aa-4701-a727-715a4850af98",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-fulham-english-premier-league-2025-08-30",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "75sYFug7t0EJh2WYUFwZ4b",
+            "optaId": "2561914",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "West Ham United",
+                "clubShortName": "West Ham",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/735.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 5
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "London Stadium",
+            "competition": "Premier League",
+            "kickoffDate": "Fri 22 Aug 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "1fafb2d1-9133-4d0d-9452-efefe88656e7",
+                "title": "Match Centre",
+                "url": "/en/match/west-ham-united-vs-chelsea-english-premier-league-2025-08-22",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "57415sTvkwQYOKnWGdBhOH",
+            "optaId": "2561902",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 0
+              },
+              "away": {
+                "clubName": "Crystal Palace",
+                "clubShortName": "Crystal Palace",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/642.png",
+                "score": 0
+              },
+              "kickoffTime": "14:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Premier League",
+            "kickoffDate": "Sun 17 Aug 2025",
+            "kickoffTime": "14:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "49123d41-3cdf-4a80-acd8-b4c458668691",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-crystal-palace-english-premier-league-2025-08-17",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "5EdaGWYqyVJQRJxtd7mPDa",
+            "optaId": "2560695",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 4
+              },
+              "away": {
+                "clubName": "AC Milan",
+                "clubShortName": "AC Milan",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1520628170/logos/teams/120.png",
+                "score": 1
+              },
+              "kickoffTime": "15:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Friendly",
+            "kickoffDate": "Sun 10 Aug 2025",
+            "kickoffTime": "15:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "200b03a7-69be-48aa-a357-e45df2712a36",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-milan-friendly-2025-08-10",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "sXn12biQyffLjxIi9CYIx",
+            "optaId": "2561894",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Bayer 04 Leverkusen",
+                "clubShortName": "Bayer 04",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/ChelseaFC/BayerLeverkusen.png",
+                "score": 0
+              },
+              "kickoffTime": "19:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Stamford Bridge",
+            "competition": "Friendly",
+            "kickoffDate": "Fri 08 Aug 2025",
+            "kickoffTime": "19:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "b864300f-1203-40b8-8b73-59ad126136bc",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-bayer-04-leverkusen-friendly-2025-08-08",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          }
+        ]
+      },
+      {
+        "id": "4165fb92-7bf0-46d7-b5e8-810d612e48d5",
+        "month": 7,
+        "year": 2025,
+        "monthName": "July",
+        "items": [
+          {
+            "id": "5bmQS0VcrgQ0dkmtFHwWsh",
+            "optaId": "2492610",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 3
+              },
+              "away": {
+                "clubName": "Paris Saint-Germain",
+                "clubShortName": "PSG",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/French/Paris_Saint_Germain.png",
+                "score": 0
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "MetLife Stadium",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Sun 13 Jul 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "bf7bc48b-c4f6-495f-ad60-6756ad735013",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-paris-saintgermain-fifa-club-world-cup-2025-07-13",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "7xm4xkdA3hLijEyeEt9nG9",
+            "optaId": "2492608",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Fluminense",
+                "clubShortName": "Fluminense",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1751834192/editorial/opposition%20club%20badges/fluminense-badge.png",
+                "score": 0
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "MetLife Stadium",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Tue 08 Jul 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "dbe8c8d7-199f-460c-8015-1a24f9211f02",
+                "title": "Match Centre",
+                "url": "/en/match/fluminense-vs-chelsea-fifa-club-world-cup-2025-07-08",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "6kfEEylnENJidGDnBxsHh5",
+            "optaId": "2492604",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Palmeiras",
+                "clubShortName": "Palmeiras",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/625.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "kickoffTime": "02:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Lincoln Financial Field",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Sat 05 Jul 2025",
+            "kickoffTime": "02:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "c4d10789-74fa-4143-956d-ad0336971b19",
+                "title": "Match Centre",
+                "url": "/en/match/palmeiras-vs-chelsea-fifa-club-world-cup-2025-07-05",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          }
+        ]
+      },
+      {
+        "id": "5f103551-a3f7-44e6-8ffc-961ddef19008",
+        "month": 6,
+        "year": 2025,
+        "monthName": "June",
+        "items": [
+          {
+            "id": "7biVwZivL48RxFQxHZ1k7o",
+            "optaId": "2492597",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Benfica",
+                "clubShortName": "Benfica",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/ChelseaFC/Benfica.png",
+                "score": 1
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 4
+              },
+              "kickoffTime": "21:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Bank of America Stadium",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Sat 28 Jun 2025",
+            "kickoffTime": "21:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "30734b2f-fe94-481c-96a5-700ffe9b434f",
+                "title": "Match Centre",
+                "url": "/en/match/benfica-vs-chelsea-fifa-club-world-cup-2025-06-28",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "2m5eC7ZqOzHNDpXwC5b2G4",
+            "optaId": "2492368",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "ES Tunis",
+                "clubShortName": "ES Tunis",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1733740655/editorial/opposition%20club%20badges/ES_Tunis_club_badge-.png",
+                "score": 0
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 3
+              },
+              "kickoffTime": "02:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Lincoln Financial Field",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Wed 25 Jun 2025",
+            "kickoffTime": "02:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "5b5d1602-b8d5-4e20-89ff-1705dfcb569c",
+                "title": "Match Centre",
+                "url": "/en/match/es-tunis-vs-chelsea-fifa-club-world-cup-2025-06-25",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "2bC27rq1O3CJggHPWP9giv",
+            "optaId": "2492350",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": false,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Flamengo",
+                "clubShortName": "Flamengo",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1736172684/editorial/opposition%20club%20badges/flamengo_club_badge-removebg.png",
+                "score": 3
+              },
+              "away": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 1
+              },
+              "kickoffTime": "19:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Lincoln Financial Field",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Fri 20 Jun 2025",
+            "kickoffTime": "19:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "f9330f89-82d2-4a94-b651-82d23c070a77",
+                "title": "Match Centre",
+                "url": "/en/match/flamengo-vs-chelsea-fifa-club-world-cup-2025-06-20",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          },
+          {
+            "id": "3fJsm8jbysa9bfouhU80V6",
+            "optaId": "2492334",
+            "isResult": true,
+            "matchUp": {
+              "isResult": true,
+              "isLive": false,
+              "isHomeFixture": true,
+              "status": "PostMatch",
+              "home": {
+                "clubName": "Chelsea",
+                "clubShortName": "Chelsea",
+                "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+                "score": 2
+              },
+              "away": {
+                "clubName": "Los Angeles",
+                "clubShortName": "Los Angeles",
+                "clubCrestUrl": "https://img.chelseafc.com/image/upload/v1748771024/editorial/opposition%20club%20badges/los-angeles-fc-badge.png",
+                "score": 0
+              },
+              "kickoffTime": "20:00",
+              "tbc": false,
+              "postponed": false
+            },
+            "venue": "Mercedes-Benz Stadium",
+            "competition": "FIFA Club World Cup ",
+            "kickoffDate": "Mon 16 Jun 2025",
+            "kickoffTime": "20:00",
+            "isLive": false,
+            "status": "PostMatch",
+            "tbc": false,
+            "postponed": false,
+            "ctas": {
+              "matchCentreLink": {
+                "id": "ec98affe-da7a-48b8-8995-7fa394223c00",
+                "title": "Match Centre",
+                "url": "/en/match/chelsea-vs-los-angeles-football-club-fifa-club-world-cup-2025-06-16",
+                "isExternal": false,
+                "isActive": false
+              }
+            },
+            "labels": {
+              "abandonedLabel": "fixture.abandonedLabel",
+              "postponedLabel": "Postponed",
+              "canceledLabel": "Cancelled",
+              "tbcLabel": "TBC"
+            },
+            "liveStreamStatus": "NotApplicable",
+            "liveStreamAccess": "Open",
+            "liveStreamAvailableOnWeb": true
+          }
+        ]
+      }
+    ],
+    "seasons": [
+      {
+        "displayText": "2025/26",
+        "value": "5qm5Cl4iyBP34LmhgCsRIp",
+        "selectedValue": true
+      },
+      {
+        "displayText": "2024/25",
+        "value": "3TFdpdevNJ39moXYJrOP93",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2023/24",
+        "value": "5mOOmpzT19e2EEn4bUY5ti",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2022/23",
+        "value": "53aG0PovnyU7JBh8znKAPH",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2021/22",
+        "value": "1aRtiukpsT30mfTFO1FEFy",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2020/21",
+        "value": "B82bqtEH6b40wdPAtWwHP",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2019/20",
+        "value": "3eNcgcyUN5X1wGF8uLVIva",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2018/19",
+        "value": "3Rmys7pyR0u6ZN9VjjtLrL",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2017/18",
+        "value": "1zxyd8VhU9KRSOC6q6nDco",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2016/17",
+        "value": "1Vqz70SEfdfbquNA8UcZ39",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2015/16",
+        "value": "F9SlS2vjkHmna6Iwe9fir",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2014/15",
+        "value": "2Mcrbw0jEEkzZbfSoKAJEG",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2013/14",
+        "value": "70mxoCCM1AgF86JlqtzSrL",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2012/13",
+        "value": "3mrx3T3lusY6PKyrSLhYff",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2011/12",
+        "value": "6V2foENgeR6YV5bYtIZtms",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2008/09",
+        "value": "2Boe8JL0g9VQcPLmf10pqv",
+        "selectedValue": false
+      },
+      {
+        "displayText": "2005/06",
+        "value": "41141d3THiPbUnsvYUpQf2",
+        "selectedValue": false
+      }
+    ],
+    "competitions": [
+      {
+        "displayText": "All Competitions",
+        "selectedValue": true
+      },
+      {
+        "displayText": "Premier League",
+        "value": "4ovcp9JVyWP9eQ2XXaWywV",
+        "selectedValue": false
+      },
+      {
+        "displayText": "UEFA Champions League",
+        "value": "5mI9bUOeC0SfR0XqfEofqe",
+        "selectedValue": false
+      },
+      {
+        "displayText": "UEFA Europa League",
+        "value": "532Tvzy9ayAWeQFY6EPcu5",
+        "selectedValue": false
+      },
+      {
+        "displayText": "UEFA Conference League",
+        "value": "l8mbUfJwGLbQglLhWWH3I",
+        "selectedValue": false
+      },
+      {
+        "displayText": "FIFA Club World Cup ",
+        "value": "6bpq1tRwdxqvmo6Jc0jYCo",
+        "selectedValue": false
+      },
+      {
+        "displayText": "FA Cup",
+        "value": "20Po3e6L0a77jdmNbR82Ai",
+        "selectedValue": false
+      },
+      {
+        "displayText": "Carabao Cup",
+        "value": "159GrVDlIEOAM2p2eTaHxp",
+        "selectedValue": false
+      },
+      {
+        "displayText": "UEFA Super Cup",
+        "value": "1KiLNPNuDYFDGbIxhYoqBm",
+        "selectedValue": false
+      },
+      {
+        "displayText": "Friendly",
+        "value": "3YuqRt5OcJON5OKsURsxyH",
+        "selectedValue": false
+      },
+      {
+        "displayText": "Florida Cup",
+        "value": "2vf3VoIGmcKiasLzk5rsia",
+        "selectedValue": false
+      },
+      {
+        "displayText": "Premier League Summer Series",
+        "value": "RjtYoFlJLE0b26WyBloUn",
+        "selectedValue": false
+      }
+    ],
+    "latestResult": {
+      "fixture": {
+        "id": "2ZS4PZiwY7gStLfizSQPqu",
+        "optaId": "2561993",
+        "isResult": true,
+        "matchUp": {
+          "isResult": true,
+          "isLive": false,
+          "isHomeFixture": false,
+          "status": "PostMatch",
+          "home": {
+            "clubName": "Tottenham Hotspur",
+            "clubShortName": "Tottenham",
+            "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/728.png",
+            "score": 0
+          },
+          "away": {
+            "clubName": "Chelsea",
+            "clubShortName": "Chelsea",
+            "clubCrestUrl": "https://clublogos.stadion.io/assets/ClubLogos/Football/English/630.png",
+            "score": 1
+          },
+          "kickoffTime": "17:30",
+          "tbc": false,
+          "postponed": false
+        },
+        "venue": "Tottenham Hotspur Stadium",
+        "competition": "Premier League",
+        "kickoffDate": "Sat 01 Nov 2025",
+        "kickoffTime": "17:30",
+        "isLive": false,
+        "status": "PostMatch",
+        "tbc": false,
+        "postponed": false,
+        "ctas": {
+          "matchCentreLink": {
+            "id": "381be51c-8e27-470a-9bbd-0922b224d5f1",
+            "title": "Match Centre",
+            "url": "/en/match/tottenham-hotspur-vs-chelsea-english-premier-league-2025-11-01",
+            "isExternal": false,
+            "isActive": false
+          }
+        },
+        "labels": {
+          "abandonedLabel": "fixture.abandonedLabel",
+          "postponedLabel": "Postponed",
+          "canceledLabel": "Cancelled",
+          "tbcLabel": "TBC"
+        },
+        "liveStreamStatus": "NotApplicable",
+        "liveStreamAccess": "Open",
+        "liveStreamAvailableOnWeb": true
+      },
+      "videos": [
+        {
+          "id": "7czAPSmSXv8AK7irgzGJxk",
+          "title": "Full Match: Tottenham 0-1 Chelsea ",
+          "type": "Video",
+          "category": {
+            "id": "e5a64ef9-6a30-41af-b7c3-9185be31427b",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T21:32:00.0000000+00:00",
+          "url": "/en/video/full-match-tottenham-0-1-chelsea",
+          "route": "chelsea://watch/video/7czAPSmSXv8AK7irgzGJxk",
+          "thumbnail": {
+            "id": "video/2025/11/01/Full_Match",
+            "title": "video/2025/11/01/Full_Match",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/Full_Match",
+              "contentType": "image",
+              "type": "upload",
+              "format": "png",
+              "url": "http://img.chelseafc.com/image/upload/v1762030983/video/2025/11/01/Full_Match.png",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/Full_Match"
+              },
+              "details": {
+                "size": 1118986,
+                "transformations": "",
+                "image": {
+                  "width": 1280,
+                  "height": 720
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "85IVQyjR",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": true,
+          "aspectRatio": "16:9",
+          "highlightsVideoType": "90 mins (Full Match)",
+          "duration": 6964
+        },
+        {
+          "id": "6rIRAtZGXqeAEbbODzZKvk",
+          "title": "Extended: Tottenham 0-1 Chelsea ",
+          "type": "Video",
+          "category": {
+            "id": "e0470a94-0ed9-44a5-8f09-a998d30607b2",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T21:31:00.0000000+00:00",
+          "url": "/en/video/extended-tottenham-0-1-chelsea",
+          "route": "chelsea://watch/video/6rIRAtZGXqeAEbbODzZKvk",
+          "thumbnail": {
+            "id": "video/2025/11/01/Extended",
+            "title": "video/2025/11/01/Extended",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/Extended",
+              "contentType": "image",
+              "type": "upload",
+              "format": "png",
+              "url": "http://img.chelseafc.com/image/upload/v1762030983/video/2025/11/01/Extended.png",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/Extended"
+              },
+              "details": {
+                "size": 1131246,
+                "transformations": "",
+                "image": {
+                  "width": 1280,
+                  "height": 720
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "mIK97PrN",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": true,
+          "aspectRatio": "16:9",
+          "duration": 482
+        },
+        {
+          "id": "1ZlQ6iPgad0INbFH7D0ySe",
+          "title": "Highlights: Tottenham 0-1 Chelsea ",
+          "type": "Video",
+          "category": {
+            "id": "e6945697-7dce-4385-a836-4609776bcf73",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T21:30:00.0000000+00:00",
+          "url": "/en/video/highlights-tottenham-0-1-chelsea",
+          "route": "chelsea://watch/video/1ZlQ6iPgad0INbFH7D0ySe",
+          "thumbnail": {
+            "id": "video/2025/11/01/Highlights_2.0",
+            "title": "video/2025/11/01/Highlights_2.0",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/Highlights_2.0",
+              "contentType": "image",
+              "type": "upload",
+              "format": "png",
+              "url": "http://img.chelseafc.com/image/upload/v1762030142/video/2025/11/01/Highlights_2.0.png",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/Highlights_2.0"
+              },
+              "details": {
+                "size": 978032,
+                "transformations": "",
+                "image": {
+                  "width": 1280,
+                  "height": 720
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "yO0hwQqe",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": false,
+          "aspectRatio": "16:9",
+          "highlightsVideoType": "2 mins",
+          "duration": 116
+        },
+        {
+          "id": "3SKLlf301iAvrGVSUkCJiH",
+          "title": "Caicedo's post-match reaction🎤",
+          "type": "Video",
+          "category": {
+            "id": "213a57d2-39e9-4565-98c9-72b2e226b63a",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T21:01:00.0000000+00:00",
+          "url": "/en/video/caicedos-post-match-reaction",
+          "route": "chelsea://watch/video/3SKLlf301iAvrGVSUkCJiH",
+          "thumbnail": {
+            "id": "video/2025/11/01/Moi-PM",
+            "title": "video/2025/11/01/Moi-PM",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/Moi-PM",
+              "contentType": "image",
+              "type": "upload",
+              "format": "png",
+              "url": "http://img.chelseafc.com/image/upload/v1762032663/video/2025/11/01/Moi-PM.png",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/Moi-PM"
+              },
+              "details": {
+                "size": 2201326,
+                "transformations": "",
+                "image": {
+                  "width": 1920,
+                  "height": 1080
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "RE4A6ajr",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": false,
+          "aspectRatio": "16:9",
+          "duration": 197
+        },
+        {
+          "id": "2cBGNN6JPBhrHpsTqxSx2u",
+          "title": "Enzo reacts post-Spurs🎤",
+          "type": "Video",
+          "category": {
+            "id": "e08b8b21-a47c-4ccc-b16d-f04822c67901",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T21:00:00.0000000+00:00",
+          "url": "/en/video/enzo-reacts-post-spurs",
+          "route": "chelsea://watch/video/2cBGNN6JPBhrHpsTqxSx2u",
+          "thumbnail": {
+            "id": "video/2025/11/01/Enzo-PM",
+            "title": "video/2025/11/01/Enzo-PM",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/Enzo-PM",
+              "contentType": "image",
+              "type": "upload",
+              "format": "png",
+              "url": "http://img.chelseafc.com/image/upload/v1762032663/video/2025/11/01/Enzo-PM.png",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/Enzo-PM"
+              },
+              "details": {
+                "size": 2275409,
+                "transformations": "",
+                "image": {
+                  "width": 1920,
+                  "height": 1080
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "v3PK8bKW",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": false,
+          "aspectRatio": "16:9",
+          "duration": 156
+        },
+        {
+          "id": "4ggEkxwZyQvnBt9Qqy36hi",
+          "title": "Line-up locked in to face Spurs 🤩",
+          "type": "Video",
+          "category": {
+            "id": "082265ad-b139-4c90-a416-d729fac351bc",
+            "title": "Video",
+            "url": "/en/news/category/video",
+            "route": "chelsea://news/category/1KazWITRfn5f4fkqMdU27j",
+            "isExternal": false,
+            "isActive": false
+          },
+          "date": "2025-11-01T16:45:00.0000000+00:00",
+          "url": "/en/video/line-up-locked-in-to-face-spurs",
+          "route": "chelsea://watch/video/4ggEkxwZyQvnBt9Qqy36hi",
+          "thumbnail": {
+            "id": "video/2025/11/01/GettyImages-2244483169",
+            "title": "video/2025/11/01/GettyImages-2244483169",
+            "description": "",
+            "credit": "",
+            "file": {
+              "fileName": "video/2025/11/01/GettyImages-2244483169",
+              "contentType": "image",
+              "type": "upload",
+              "format": "jpg",
+              "url": "http://img.chelseafc.com/image/upload/v1762017704/video/2025/11/01/GettyImages-2244483169.jpg",
+              "urlObject": {
+                "baseUrl": "https://res.cloudinary.com/",
+                "cloudName": "chelsea-production",
+                "resourceType": "image",
+                "type": "upload",
+                "publicId": "video/2025/11/01/GettyImages-2244483169"
+              },
+              "details": {
+                "size": 6486843,
+                "transformations": "",
+                "image": {
+                  "width": 5970,
+                  "height": 4002
+                }
+              }
+            },
+            "coordinates": []
+          },
+          "videoId": "ioWO4UcR",
+          "matchId": "2ZS4PZiwY7gStLfizSQPqu",
+          "isBoxSet": false,
+          "requiresLogin": false,
+          "aspectRatio": "4:5",
+          "duration": 88
+        }
+      ]
+    }
+  }
+}
