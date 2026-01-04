@@ -25,3 +25,7 @@ Thumbs.db
 *.log
 
 
+# Bot cache
+bot/cache/
+
+
